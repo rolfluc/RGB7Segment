@@ -785,19 +785,8 @@
 		)
 		(uuid "4e132053-2cb5-47fc-b1f8-ec916f5e8038")
 	)
-	(label "DIN"
-		(at 179.07 143.51 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9b3b373a-cf58-42fd-9c0b-c8f63561bc8a")
-	)
 	(label "DOUT"
-		(at 179.07 146.05 0)
+		(at 101.6 157.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -805,7 +794,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "aff516c2-b92f-4ec1-8581-093d2f240363")
+		(uuid "844acb25-fa87-4a02-9d4f-b5bc4663a3f7")
 	)
 	(label "DOUT"
 		(at 26.67 35.56 0)
@@ -818,9 +807,20 @@
 		)
 		(uuid "b6b759ef-0334-4001-9c29-3320dc83dd6e")
 	)
+	(label "DIN"
+		(at 179.07 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c72265df-40bd-4518-848c-648336ccd1cf")
+	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 180.34 45.974 0)
+		(at 186.69 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -829,7 +829,7 @@
 		(fields_autoplaced yes)
 		(uuid "02ae624c-2216-452e-9500-a8002fb76374")
 		(property "Reference" "#PWR0117"
-			(at 180.34 49.784 0)
+			(at 186.69 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -838,7 +838,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 180.34 42.3982 0)
+			(at 186.69 40.8742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -846,7 +846,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 45.974 0)
+			(at 186.69 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -855,7 +855,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 45.974 0)
+			(at 186.69 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -864,7 +864,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 45.974 0)
+			(at 186.69 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -953,7 +953,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 180.34 53.594 0)
+		(at 186.69 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -961,7 +961,7 @@
 		(dnp no)
 		(uuid "0b576e54-4598-4610-90ed-f20fef1749b3")
 		(property "Reference" "C1"
-			(at 190.6459 50.1356 0)
+			(at 196.9959 48.6116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -969,7 +969,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 192.532 59.69 0)
+			(at 198.882 58.166 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,7 +977,7 @@
 			)
 		)
 		(property "Footprint" "Library:4960_Test4"
-			(at 181.61 61.214 0)
+			(at 187.96 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -987,7 +987,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 63.119 0)
+			(at 189.23 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -997,7 +997,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 53.594 0)
+			(at 186.69 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1950,7 +1950,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 93.98 164.338 0)
+		(at 93.98 165.1 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1960,7 +1960,7 @@
 		(fields_autoplaced yes)
 		(uuid "4050dbe3-0c52-48e6-8e27-8f630715ae9d")
 		(property "Reference" "#PWR0137"
-			(at 93.98 170.688 0)
+			(at 93.98 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1969,7 +1969,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 168.7814 0)
+			(at 93.98 169.5434 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1977,7 +1977,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 164.338 0)
+			(at 93.98 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1986,7 +1986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 164.338 0)
+			(at 93.98 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1995,7 +1995,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 164.338 0)
+			(at 93.98 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2296,7 +2296,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 93.98 156.718 0)
+		(at 93.98 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2304,7 +2304,7 @@
 		(dnp no)
 		(uuid "5b8afcda-4223-412a-ab3f-f2b6c6201ae7")
 		(property "Reference" "E2"
-			(at 104.2859 153.2596 0)
+			(at 104.2859 154.0216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2312,7 +2312,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 106.172 162.814 0)
+			(at 106.172 163.576 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2320,7 +2320,7 @@
 			)
 		)
 		(property "Footprint" "Library:4960_Test4"
-			(at 95.25 164.338 0)
+			(at 95.25 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2330,7 +2330,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 166.243 0)
+			(at 96.52 167.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2340,7 +2340,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 156.718 0)
+			(at 93.98 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2914,7 +2914,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 93.98 149.098 0)
+		(at 93.98 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2923,7 +2923,7 @@
 		(fields_autoplaced yes)
 		(uuid "7fc8b1df-5543-480c-87cf-b33386780b6a")
 		(property "Reference" "#PWR0140"
-			(at 93.98 152.908 0)
+			(at 93.98 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2932,7 +2932,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 93.98 145.5222 0)
+			(at 93.98 146.2842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2940,7 +2940,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 149.098 0)
+			(at 93.98 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2949,7 +2949,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 149.098 0)
+			(at 93.98 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2958,7 +2958,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 149.098 0)
+			(at 93.98 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3318,7 +3318,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 61.214 0)
+		(at 186.69 59.69 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3328,7 +3328,7 @@
 		(fields_autoplaced yes)
 		(uuid "8b8e7591-0e99-4444-8795-5b2d6940254e")
 		(property "Reference" "#PWR0108"
-			(at 180.34 67.564 0)
+			(at 186.69 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3337,7 +3337,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.34 65.6574 0)
+			(at 186.69 64.1334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3345,7 +3345,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 61.214 0)
+			(at 186.69 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3354,7 +3354,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 61.214 0)
+			(at 186.69 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3363,7 +3363,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 61.214 0)
+			(at 186.69 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
