@@ -4,7 +4,7 @@
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 1.2 -2.7 0)
+		(at 1.6 -2.25 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "7c4769da-610f-4aec-8a35-55007aa77737")
@@ -65,8 +65,8 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -0.775 -1.7)
-		(end 1.075 -1.7)
+		(start -0.65 -1.55)
+		(end 1.15 -1.55)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -75,8 +75,8 @@
 		(uuid "505adc29-3772-4cb2-a413-b4df7329dd20")
 	)
 	(fp_line
-		(start 1.4 -1.7)
-		(end 3.45 -1.7)
+		(start 1.55 -1.55)
+		(end 3.3625 -1.55)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -85,8 +85,8 @@
 		(uuid "d28b4622-ed28-4c84-a18a-f467e49296d0")
 	)
 	(fp_rect
-		(start -0.8 -1.35)
-		(end 3.475 0.425)
+		(start -0.65 -1.35)
+		(end 3.375 0.425)
 		(stroke
 			(width 0.12)
 			(type solid)
