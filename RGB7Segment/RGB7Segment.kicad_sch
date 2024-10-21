@@ -774,8 +774,150 @@
 			)
 		)
 	)
+	(wire
+		(pts
+			(xy 220.98 60.96) (xy 229.87 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "176b0372-c768-4a30-a145-0714037cad73")
+	)
+	(wire
+		(pts
+			(xy 148.59 60.96) (xy 156.21 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e53d13d-4a39-4193-a4cc-bdaeac85eae0")
+	)
+	(wire
+		(pts
+			(xy 143.51 128.27) (xy 148.59 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32606a11-c7c7-43f2-a460-9dfe545fb049")
+	)
+	(wire
+		(pts
+			(xy 245.11 60.96) (xy 250.19 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "335f4072-7457-4a15-be5a-874683d5dfd6")
+	)
+	(wire
+		(pts
+			(xy 120.65 128.27) (xy 128.27 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ecd581f-5fe1-4289-a1c9-c0a067ebce44")
+	)
+	(wire
+		(pts
+			(xy 198.12 60.96) (xy 205.74 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82fea3c5-a176-4986-a6b7-71a964c66f14")
+	)
+	(wire
+		(pts
+			(xy 120.65 60.96) (xy 133.35 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f8af135-e886-4dc0-aba8-38f3b9d198ee")
+	)
+	(wire
+		(pts
+			(xy 171.45 60.96) (xy 182.88 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a26463cc-7fc5-4eb3-866a-164f75d4a367")
+	)
+	(wire
+		(pts
+			(xy 55.88 128.27) (xy 62.23 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a79133e4-2857-4939-8db8-638c80e47583")
+	)
+	(wire
+		(pts
+			(xy 77.47 128.27) (xy 83.82 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcb7d3e0-e15c-473c-86a3-618b7d11effe")
+	)
+	(wire
+		(pts
+			(xy 99.06 128.27) (xy 105.41 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7bfc3de-a73b-48b9-afc8-221c2f5668c8")
+	)
+	(wire
+		(pts
+			(xy 163.83 128.27) (xy 168.91 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3500f8c-1c20-4042-9f82-5cc2a47129d7")
+	)
+	(label "E2"
+		(at 40.64 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "01910e78-c2cf-4521-a518-84568a711820")
+	)
+	(label "E2"
+		(at 265.43 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "243d957b-3d31-4f8d-9ef1-e587f6124d1f")
+	)
 	(label "DIN"
-		(at 123.19 81.28 180)
+		(at 105.41 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -797,7 +939,7 @@
 		(uuid "4e132053-2cb5-47fc-b1f8-ec916f5e8038")
 	)
 	(label "DOUT"
-		(at 71.12 158.75 0)
+		(at 184.15 128.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -820,7 +962,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 186.69 44.45 0)
+		(at 257.81 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -829,7 +971,7 @@
 		(fields_autoplaced yes)
 		(uuid "02ae624c-2216-452e-9500-a8002fb76374")
 		(property "Reference" "#PWR0117"
-			(at 186.69 48.26 0)
+			(at 257.81 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -838,7 +980,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 186.69 40.8742 0)
+			(at 257.81 49.7642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -846,7 +988,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 44.45 0)
+			(at 257.81 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -855,7 +997,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 44.45 0)
+			(at 257.81 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -864,7 +1006,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 186.69 44.45 0)
+			(at 257.81 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -886,7 +1028,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.594 87.376 0)
+		(at 163.83 68.58 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -896,7 +1038,7 @@
 		(fields_autoplaced yes)
 		(uuid "076611db-bc49-4ea6-872c-703c740dd9b1")
 		(property "Reference" "#PWR0114"
-			(at 180.594 93.726 0)
+			(at 163.83 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -905,7 +1047,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.594 91.8194 0)
+			(at 163.83 73.0234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -913,7 +1055,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.594 87.376 0)
+			(at 163.83 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -922,7 +1064,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.594 87.376 0)
+			(at 163.83 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -931,7 +1073,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.594 87.376 0)
+			(at 163.83 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -953,7 +1095,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 186.69 52.07 0)
+		(at 257.81 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -961,7 +1103,7 @@
 		(dnp no)
 		(uuid "0b576e54-4598-4610-90ed-f20fef1749b3")
 		(property "Reference" "C1"
-			(at 196.9959 48.6116 0)
+			(at 268.1159 57.5016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -969,7 +1111,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 198.882 58.166 0)
+			(at 270.002 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,7 +1119,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 187.96 59.69 0)
+			(at 259.08 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -987,7 +1129,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 61.595 0)
+			(at 260.35 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -997,7 +1139,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 186.69 52.07 0)
+			(at 257.81 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1028,7 +1170,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 73.914 125.222 0)
+		(at 91.44 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1036,7 +1178,7 @@
 		(dnp no)
 		(uuid "0cdb4d67-41f4-48ea-b288-8eb8dfb83942")
 		(property "Reference" "A2"
-			(at 84.2199 121.7636 0)
+			(at 101.7459 124.8116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1044,7 +1186,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 86.106 131.318 0)
+			(at 103.632 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1052,7 +1194,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 75.184 132.842 0)
+			(at 92.71 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1062,7 +1204,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.454 134.747 0)
+			(at 93.98 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1072,7 +1214,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.914 125.222 0)
+			(at 91.44 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1103,7 +1245,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 157.226 53.848 0)
+		(at 213.36 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1111,7 +1253,7 @@
 		(dnp no)
 		(uuid "0f221366-99c9-4268-8fe4-5e23100e3785")
 		(property "Reference" "B1"
-			(at 167.5319 50.3896 0)
+			(at 223.6659 57.5016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1119,7 +1261,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 169.418 59.944 0)
+			(at 225.552 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1127,7 +1269,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 158.496 61.468 0)
+			(at 214.63 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1137,7 +1279,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 159.766 63.373 0)
+			(at 215.9 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1147,7 +1289,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 157.226 53.848 0)
+			(at 213.36 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1178,7 +1320,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 73.914 117.602 0)
+		(at 91.44 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1187,7 +1329,7 @@
 		(fields_autoplaced yes)
 		(uuid "160be67a-3905-4c77-b0dd-93edcf309c97")
 		(property "Reference" "#PWR0132"
-			(at 73.914 121.412 0)
+			(at 91.44 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1196,7 +1338,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 73.914 114.0262 0)
+			(at 91.44 117.0742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1204,7 +1346,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.914 117.602 0)
+			(at 91.44 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1213,7 +1355,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.914 117.602 0)
+			(at 91.44 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1222,7 +1364,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.914 117.602 0)
+			(at 91.44 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1377,7 +1519,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 100.584 118.11 0)
+		(at 113.03 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1386,7 +1528,7 @@
 		(fields_autoplaced yes)
 		(uuid "28e417f4-26bf-44b5-afe1-51fd9a4f6171")
 		(property "Reference" "#PWR0146"
-			(at 100.584 121.92 0)
+			(at 113.03 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1395,7 +1537,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 100.584 114.5342 0)
+			(at 113.03 117.0742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1403,7 +1545,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.584 118.11 0)
+			(at 113.03 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1412,7 +1554,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.584 118.11 0)
+			(at 113.03 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1421,7 +1563,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 100.584 118.11 0)
+			(at 113.03 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1443,7 +1585,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 123.698 125.476 0)
+		(at 135.89 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1451,7 +1593,7 @@
 		(dnp no)
 		(uuid "29674630-f3d3-4e8b-9805-935ba7d20f57")
 		(property "Reference" "C2"
-			(at 134.0039 122.0176 0)
+			(at 146.1959 124.8116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1459,7 +1601,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 135.89 131.572 0)
+			(at 148.082 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1467,7 +1609,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 124.968 133.096 0)
+			(at 137.16 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1477,7 +1619,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 126.238 135.001 0)
+			(at 138.43 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1487,7 +1629,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.698 125.476 0)
+			(at 135.89 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1518,7 +1660,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 203.2 79.756 0)
+		(at 237.49 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1526,7 +1668,7 @@
 		(dnp no)
 		(uuid "2a6e50c1-c0ed-42db-a2ab-25919802f2d7")
 		(property "Reference" "G1"
-			(at 213.5059 76.2976 0)
+			(at 247.7959 57.5016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1534,7 +1676,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 215.392 85.852 0)
+			(at 249.682 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1542,7 +1684,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 204.47 87.376 0)
+			(at 238.76 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1552,7 +1694,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 89.281 0)
+			(at 240.03 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1562,7 +1704,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 203.2 79.756 0)
+			(at 237.49 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1593,7 +1735,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 100.584 125.73 0)
+		(at 113.03 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1601,7 +1743,7 @@
 		(dnp no)
 		(uuid "318dac05-5174-4777-9cc0-35dcaffd9299")
 		(property "Reference" "B2"
-			(at 110.8899 122.2716 0)
+			(at 123.3359 124.8116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1609,7 +1751,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 112.776 131.826 0)
+			(at 125.222 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1617,7 +1759,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 101.854 133.35 0)
+			(at 114.3 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1627,7 +1769,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 103.124 135.255 0)
+			(at 115.57 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1637,7 +1779,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 100.584 125.73 0)
+			(at 113.03 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1668,7 +1810,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 130.556 45.72 0)
+		(at 190.5 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1677,7 +1819,7 @@
 		(fields_autoplaced yes)
 		(uuid "33a32651-a10c-45d0-8298-a72273cc9ef9")
 		(property "Reference" "#PWR0130"
-			(at 130.556 49.53 0)
+			(at 190.5 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1686,7 +1828,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 130.556 42.1442 0)
+			(at 190.5 49.7642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1694,7 +1836,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.556 45.72 0)
+			(at 190.5 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1703,7 +1845,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.556 45.72 0)
+			(at 190.5 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1712,7 +1854,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.556 45.72 0)
+			(at 190.5 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1734,7 +1876,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 63.5 158.75 0)
+		(at 176.53 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1742,7 +1884,7 @@
 		(dnp no)
 		(uuid "388e50c7-9a59-478a-9ccf-ebd88218753f")
 		(property "Reference" "D2"
-			(at 73.8059 155.2916 0)
+			(at 186.8359 124.8116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1750,7 +1892,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 75.692 164.846 0)
+			(at 188.722 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1758,7 +1900,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 64.77 166.37 0)
+			(at 177.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1768,7 +1910,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 168.275 0)
+			(at 179.07 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1778,7 +1920,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 158.75 0)
+			(at 176.53 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1809,7 +1951,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 140.208 156.718 0)
+		(at 156.21 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1817,7 +1959,7 @@
 		(dnp no)
 		(uuid "3d510844-3c65-49a4-a210-b2dec1a7cada")
 		(property "Reference" "G2"
-			(at 150.5139 153.2596 0)
+			(at 166.5159 124.8116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1825,7 +1967,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 152.4 162.814 0)
+			(at 168.402 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1833,7 +1975,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 141.478 164.338 0)
+			(at 157.48 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1843,7 +1985,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.748 166.243 0)
+			(at 158.75 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1853,7 +1995,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.208 156.718 0)
+			(at 156.21 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1950,7 +2092,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 93.98 165.1 0)
+		(at 48.26 135.89 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1960,7 +2102,7 @@
 		(fields_autoplaced yes)
 		(uuid "4050dbe3-0c52-48e6-8e27-8f630715ae9d")
 		(property "Reference" "#PWR0137"
-			(at 93.98 171.45 0)
+			(at 48.26 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1969,7 +2111,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 169.5434 0)
+			(at 48.26 140.3334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1977,7 +2119,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 165.1 0)
+			(at 48.26 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1986,7 +2128,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 165.1 0)
+			(at 48.26 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1995,7 +2137,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 165.1 0)
+			(at 48.26 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2087,7 +2229,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 88.9 0)
+		(at 113.03 68.58 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2097,7 +2239,7 @@
 		(fields_autoplaced yes)
 		(uuid "4ac93e82-4692-490e-8ba3-c6ec76fe0eed")
 		(property "Reference" "#PWR0112"
-			(at 130.81 95.25 0)
+			(at 113.03 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2106,7 +2248,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 93.3434 0)
+			(at 113.03 73.0234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2114,7 +2256,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 88.9 0)
+			(at 113.03 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2123,7 +2265,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 88.9 0)
+			(at 113.03 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2132,7 +2274,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 88.9 0)
+			(at 113.03 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2154,7 +2296,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 140.208 164.338 0)
+		(at 156.21 135.89 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2164,7 +2306,7 @@
 		(fields_autoplaced yes)
 		(uuid "4fc554a7-1a9f-45b1-ad3f-5f90decd0ecb")
 		(property "Reference" "#PWR0147"
-			(at 140.208 170.688 0)
+			(at 156.21 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2173,7 +2315,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.208 168.7814 0)
+			(at 156.21 140.3334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2181,7 +2323,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.208 164.338 0)
+			(at 156.21 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2190,7 +2332,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.208 164.338 0)
+			(at 156.21 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2199,7 +2341,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.208 164.338 0)
+			(at 156.21 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2221,7 +2363,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 180.594 79.756 0)
+		(at 163.83 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2229,7 +2371,7 @@
 		(dnp no)
 		(uuid "54b16a55-015c-4934-a7c0-83a8c73a6e52")
 		(property "Reference" "F1"
-			(at 190.8999 76.2976 0)
+			(at 174.1359 57.5016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2237,7 +2379,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 192.786 85.852 0)
+			(at 176.022 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2245,7 +2387,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 181.864 87.376 0)
+			(at 165.1 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2255,7 +2397,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 183.134 89.281 0)
+			(at 166.37 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2265,7 +2407,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.594 79.756 0)
+			(at 163.83 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2296,7 +2438,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 93.98 157.48 0)
+		(at 48.26 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2304,7 +2446,7 @@
 		(dnp no)
 		(uuid "5b8afcda-4223-412a-ab3f-f2b6c6201ae7")
 		(property "Reference" "E2"
-			(at 104.2859 154.0216 0)
+			(at 58.5659 124.8116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2312,7 +2454,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 106.172 163.576 0)
+			(at 60.452 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2320,7 +2462,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 95.25 165.1 0)
+			(at 49.53 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2330,7 +2472,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 167.005 0)
+			(at 50.8 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2340,7 +2482,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 157.48 0)
+			(at 48.26 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2504,7 +2646,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 203.2 72.136 0)
+		(at 237.49 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2513,7 +2655,7 @@
 		(fields_autoplaced yes)
 		(uuid "5fec23c7-4dc6-4201-ba7a-c95e1900fe92")
 		(property "Reference" "#PWR0102"
-			(at 203.2 75.946 0)
+			(at 237.49 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2522,7 +2664,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 203.2 68.5602 0)
+			(at 237.49 49.7642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2530,7 +2672,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 72.136 0)
+			(at 237.49 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2539,7 +2681,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 72.136 0)
+			(at 237.49 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2548,7 +2690,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 203.2 72.136 0)
+			(at 237.49 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2570,7 +2712,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 180.594 72.136 0)
+		(at 163.83 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2579,7 +2721,7 @@
 		(fields_autoplaced yes)
 		(uuid "60b026f8-8947-4025-94ae-ac91d838ca1f")
 		(property "Reference" "#PWR0116"
-			(at 180.594 75.946 0)
+			(at 163.83 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2588,7 +2730,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 180.594 68.5602 0)
+			(at 163.83 49.7642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2596,7 +2738,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.594 72.136 0)
+			(at 163.83 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2605,7 +2747,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.594 72.136 0)
+			(at 163.83 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2614,7 +2756,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.594 72.136 0)
+			(at 163.83 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2703,7 +2845,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 130.556 53.34 0)
+		(at 190.5 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2711,7 +2853,7 @@
 		(dnp no)
 		(uuid "73ff21f7-ead9-4278-8c60-e7867b1d10e3")
 		(property "Reference" "A1"
-			(at 140.8619 49.8816 0)
+			(at 200.8059 57.5016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2719,7 +2861,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 142.748 59.436 0)
+			(at 202.692 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2727,7 +2869,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 131.826 60.96 0)
+			(at 191.77 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2737,7 +2879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.096 62.865 0)
+			(at 193.04 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2747,7 +2889,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.556 53.34 0)
+			(at 190.5 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2914,7 +3056,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 93.98 149.86 0)
+		(at 48.26 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2923,7 +3065,7 @@
 		(fields_autoplaced yes)
 		(uuid "7fc8b1df-5543-480c-87cf-b33386780b6a")
 		(property "Reference" "#PWR0140"
-			(at 93.98 153.67 0)
+			(at 48.26 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2932,7 +3074,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 93.98 146.2842 0)
+			(at 48.26 117.0742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2940,7 +3082,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 149.86 0)
+			(at 48.26 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2949,7 +3091,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 149.86 0)
+			(at 48.26 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2958,7 +3100,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 149.86 0)
+			(at 48.26 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3050,7 +3192,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 157.226 61.468 0)
+		(at 213.36 68.58 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3060,7 +3202,7 @@
 		(fields_autoplaced yes)
 		(uuid "85edfde6-39b0-491e-a553-fe184a48e149")
 		(property "Reference" "#PWR0118"
-			(at 157.226 67.818 0)
+			(at 213.36 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3069,7 +3211,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 157.226 65.9114 0)
+			(at 213.36 73.0234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,7 +3219,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.226 61.468 0)
+			(at 213.36 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3086,7 +3228,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.226 61.468 0)
+			(at 213.36 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3095,7 +3237,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 157.226 61.468 0)
+			(at 213.36 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3117,7 +3259,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.556 60.96 0)
+		(at 190.5 68.58 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3127,7 +3269,7 @@
 		(fields_autoplaced yes)
 		(uuid "866c3b4c-6d17-4625-9b37-53356e36522a")
 		(property "Reference" "#PWR0110"
-			(at 130.556 67.31 0)
+			(at 190.5 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3136,7 +3278,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.556 65.4034 0)
+			(at 190.5 73.0234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3144,7 +3286,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.556 60.96 0)
+			(at 190.5 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3153,7 +3295,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.556 60.96 0)
+			(at 190.5 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3162,7 +3304,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.556 60.96 0)
+			(at 190.5 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3184,7 +3326,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.914 132.842 0)
+		(at 91.44 135.89 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3194,7 +3336,7 @@
 		(fields_autoplaced yes)
 		(uuid "8685e165-1bbf-425a-a2bd-8010940fd257")
 		(property "Reference" "#PWR0145"
-			(at 73.914 139.192 0)
+			(at 91.44 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3203,7 +3345,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 73.914 137.2854 0)
+			(at 91.44 140.3334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3211,7 +3353,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.914 132.842 0)
+			(at 91.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3220,7 +3362,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.914 132.842 0)
+			(at 91.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3229,7 +3371,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.914 132.842 0)
+			(at 91.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3251,7 +3393,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.698 133.096 0)
+		(at 135.89 135.89 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3261,7 +3403,7 @@
 		(fields_autoplaced yes)
 		(uuid "885a8fb8-e516-437d-9a39-2292906cd878")
 		(property "Reference" "#PWR0141"
-			(at 123.698 139.446 0)
+			(at 135.89 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3270,7 +3412,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.698 137.5394 0)
+			(at 135.89 140.3334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3278,7 +3420,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.698 133.096 0)
+			(at 135.89 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3287,7 +3429,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.698 133.096 0)
+			(at 135.89 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3296,7 +3438,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.698 133.096 0)
+			(at 135.89 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3318,7 +3460,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 186.69 59.69 0)
+		(at 257.81 68.58 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3328,7 +3470,7 @@
 		(fields_autoplaced yes)
 		(uuid "8b8e7591-0e99-4444-8795-5b2d6940254e")
 		(property "Reference" "#PWR0108"
-			(at 186.69 66.04 0)
+			(at 257.81 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3337,7 +3479,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 186.69 64.1334 0)
+			(at 257.81 73.0234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3345,7 +3487,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 59.69 0)
+			(at 257.81 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3354,7 +3496,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 59.69 0)
+			(at 257.81 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3363,7 +3505,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 186.69 59.69 0)
+			(at 257.81 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3385,7 +3527,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 140.208 149.098 0)
+		(at 156.21 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3394,7 +3536,7 @@
 		(fields_autoplaced yes)
 		(uuid "8cc131cf-9acf-48b8-b21f-af094108d0e1")
 		(property "Reference" "#PWR0150"
-			(at 140.208 152.908 0)
+			(at 156.21 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3403,7 +3545,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 140.208 145.5222 0)
+			(at 156.21 117.0742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3411,7 +3553,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.208 149.098 0)
+			(at 156.21 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3420,7 +3562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.208 149.098 0)
+			(at 156.21 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3429,7 +3571,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.208 149.098 0)
+			(at 156.21 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3451,7 +3593,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 130.81 73.66 0)
+		(at 113.03 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3460,7 +3602,7 @@
 		(fields_autoplaced yes)
 		(uuid "8d10538d-30e1-4850-86a7-276aa7bd53cb")
 		(property "Reference" "#PWR0126"
-			(at 130.81 77.47 0)
+			(at 113.03 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3469,7 +3611,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 130.81 70.0842 0)
+			(at 113.03 49.7642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3477,7 +3619,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 73.66 0)
+			(at 113.03 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3486,7 +3628,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 73.66 0)
+			(at 113.03 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3495,7 +3637,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 73.66 0)
+			(at 113.03 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3517,16 +3659,15 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 157.226 46.228 0)
+		(at 213.36 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "981a3a94-d0e1-4289-8a7e-91973668a0a9")
 		(property "Reference" "#PWR0123"
-			(at 157.226 50.038 0)
+			(at 213.36 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3535,7 +3676,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 157.226 42.6522 0)
+			(at 213.36 49.7642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3543,7 +3684,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.226 46.228 0)
+			(at 213.36 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3552,7 +3693,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.226 46.228 0)
+			(at 213.36 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3561,7 +3702,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 157.226 46.228 0)
+			(at 213.36 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3649,7 +3790,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 117.602 156.718 0)
+		(at 69.85 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3657,7 +3798,7 @@
 		(dnp no)
 		(uuid "9912fca6-6920-4cb8-8eb8-8b760f0da464")
 		(property "Reference" "F2"
-			(at 127.9079 153.2596 0)
+			(at 80.1559 124.8116 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3665,7 +3806,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 129.794 162.814 0)
+			(at 82.042 134.366 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3673,7 +3814,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 118.872 164.338 0)
+			(at 71.12 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3683,7 +3824,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.142 166.243 0)
+			(at 72.39 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3693,7 +3834,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 117.602 156.718 0)
+			(at 69.85 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3724,7 +3865,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.584 133.35 0)
+		(at 113.03 135.89 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3734,7 +3875,7 @@
 		(fields_autoplaced yes)
 		(uuid "a113ccde-848b-4772-932e-3c0002518120")
 		(property "Reference" "#PWR0144"
-			(at 100.584 139.7 0)
+			(at 113.03 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3743,7 +3884,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.584 137.7934 0)
+			(at 113.03 140.3334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3751,7 +3892,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.584 133.35 0)
+			(at 113.03 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3760,7 +3901,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.584 133.35 0)
+			(at 113.03 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3769,7 +3910,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 100.584 133.35 0)
+			(at 113.03 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3994,7 +4135,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 117.602 164.338 0)
+		(at 69.85 135.89 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4004,7 +4145,7 @@
 		(fields_autoplaced yes)
 		(uuid "b2bd7151-0a11-4461-a40e-8b17a7aa80e3")
 		(property "Reference" "#PWR0142"
-			(at 117.602 170.688 0)
+			(at 69.85 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4013,7 +4154,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 117.602 168.7814 0)
+			(at 69.85 140.3334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4021,7 +4162,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 117.602 164.338 0)
+			(at 69.85 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4030,7 +4171,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 117.602 164.338 0)
+			(at 69.85 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4039,7 +4180,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 117.602 164.338 0)
+			(at 69.85 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4061,7 +4202,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 156.972 79.756 0)
+		(at 140.97 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4069,7 +4210,7 @@
 		(dnp no)
 		(uuid "ba3d1e86-63b0-4447-8910-9af36eda1e07")
 		(property "Reference" "E1"
-			(at 167.2779 76.2976 0)
+			(at 151.2759 57.5016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4077,7 +4218,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 169.164 85.852 0)
+			(at 153.162 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4085,7 +4226,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 158.242 87.376 0)
+			(at 142.24 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4095,7 +4236,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 159.512 89.281 0)
+			(at 143.51 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4105,7 +4246,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 156.972 79.756 0)
+			(at 140.97 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4136,7 +4277,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 166.37 0)
+		(at 176.53 135.89 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4146,7 +4287,7 @@
 		(fields_autoplaced yes)
 		(uuid "c1eb9c8b-f266-4a8d-9837-35a8c4ca2fc9")
 		(property "Reference" "#PWR0139"
-			(at 63.5 172.72 0)
+			(at 176.53 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4155,7 +4296,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 170.8134 0)
+			(at 176.53 140.3334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4163,7 +4304,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 166.37 0)
+			(at 176.53 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4172,7 +4313,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 166.37 0)
+			(at 176.53 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4181,7 +4322,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 166.37 0)
+			(at 176.53 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4203,7 +4344,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 117.602 149.098 0)
+		(at 69.85 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4212,7 +4353,7 @@
 		(fields_autoplaced yes)
 		(uuid "c4228e24-1752-4f76-b0cc-7de075179ec7")
 		(property "Reference" "#PWR0143"
-			(at 117.602 152.908 0)
+			(at 69.85 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4221,7 +4362,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 117.602 145.5222 0)
+			(at 69.85 117.0742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4229,7 +4370,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 117.602 149.098 0)
+			(at 69.85 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4238,7 +4379,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 117.602 149.098 0)
+			(at 69.85 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4247,7 +4388,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 117.602 149.098 0)
+			(at 69.85 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4269,7 +4410,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 123.698 117.856 0)
+		(at 135.89 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4278,7 +4419,7 @@
 		(fields_autoplaced yes)
 		(uuid "c54014ec-77a8-45de-9cfa-546602e9e967")
 		(property "Reference" "#PWR0134"
-			(at 123.698 121.666 0)
+			(at 135.89 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4287,7 +4428,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 123.698 114.2802 0)
+			(at 135.89 117.0742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4295,7 +4436,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.698 117.856 0)
+			(at 135.89 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4304,7 +4445,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.698 117.856 0)
+			(at 135.89 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4313,7 +4454,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.698 117.856 0)
+			(at 135.89 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4335,7 +4476,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 156.972 72.136 0)
+		(at 140.97 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4344,7 +4485,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd36ca67-2528-4d25-bbe8-2013c851c653")
 		(property "Reference" "#PWR0107"
-			(at 156.972 75.946 0)
+			(at 140.97 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4353,7 +4494,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 156.972 68.5602 0)
+			(at 140.97 49.7642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4361,7 +4502,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.972 72.136 0)
+			(at 140.97 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4370,7 +4511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.972 72.136 0)
+			(at 140.97 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4379,7 +4520,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 156.972 72.136 0)
+			(at 140.97 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,7 +4746,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 156.972 87.376 0)
+		(at 140.97 68.58 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4615,7 +4756,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2d431f6-8ce8-41f2-8e74-8bcdd5ab5a27")
 		(property "Reference" "#PWR0113"
-			(at 156.972 93.726 0)
+			(at 140.97 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4624,7 +4765,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.972 91.8194 0)
+			(at 140.97 73.0234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4632,7 +4773,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.972 87.376 0)
+			(at 140.97 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4641,7 +4782,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.972 87.376 0)
+			(at 140.97 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4650,7 +4791,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 156.972 87.376 0)
+			(at 140.97 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4738,7 +4879,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 63.5 151.13 0)
+		(at 176.53 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4747,7 +4888,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6067a2a-b03c-4f65-a2a4-b627b6acdc1d")
 		(property "Reference" "#PWR0138"
-			(at 63.5 154.94 0)
+			(at 176.53 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4756,7 +4897,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 63.5 147.5542 0)
+			(at 176.53 117.0742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4764,7 +4905,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 151.13 0)
+			(at 176.53 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4773,7 +4914,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 151.13 0)
+			(at 176.53 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4782,7 +4923,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 151.13 0)
+			(at 176.53 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4804,7 +4945,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 130.81 81.28 0)
+		(at 113.03 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4812,7 +4953,7 @@
 		(dnp no)
 		(uuid "ee5279bc-9ed2-4dc6-ae1e-a912f4bae78b")
 		(property "Reference" "D1"
-			(at 141.1159 77.8216 0)
+			(at 123.3359 57.5016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4820,7 +4961,7 @@
 			)
 		)
 		(property "Value" "SK6812-E"
-			(at 143.002 87.376 0)
+			(at 125.222 67.056 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4828,7 +4969,7 @@
 			)
 		)
 		(property "Footprint" "Library:12-23C"
-			(at 132.08 88.9 0)
+			(at 114.3 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4838,7 +4979,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 90.805 0)
+			(at 115.57 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4848,7 +4989,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 81.28 0)
+			(at 113.03 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4879,7 +5020,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 203.2 87.376 0)
+		(at 237.49 68.58 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4889,7 +5030,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1b66687-1e45-4c3b-aebb-aa39a02be75b")
 		(property "Reference" "#PWR0115"
-			(at 203.2 93.726 0)
+			(at 237.49 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4898,7 +5039,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 91.8194 0)
+			(at 237.49 73.0234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4906,7 +5047,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 87.376 0)
+			(at 237.49 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4915,7 +5056,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 87.376 0)
+			(at 237.49 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4924,7 +5065,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 203.2 87.376 0)
+			(at 237.49 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
