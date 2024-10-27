@@ -28,3 +28,4 @@ typedef enum
 }SegmentVal;
 
 void SetDisplay(SegmentVal v0, Color c0, SegmentVal v1, Color c1);
+SegmentVal GetSegmentForInt(uint8_t singleDecimal);

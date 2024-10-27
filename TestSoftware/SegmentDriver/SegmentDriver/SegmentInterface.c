@@ -1,5 +1,6 @@
 #include "SegmentInterface.h"
 #include "AddressableLED.h"
+#include "SPI.h"
 #include <memory.h>
 // Total Data size, 2 x 7 segments, 3 colors per segment, 4 bits of data per bit of color
 // 24 bits of color, 24 * 4 (bits of SPI data) / 8 = 12 bytes
@@ -56,244 +57,260 @@ static inline void ColorToPadded(Color c, PaddedColor* pc)
 	FillColor((uint8_t*)pc, c);
 }
 
-void SetDisplay(SegmentVal v0, Color c0, SegmentVal v1, Color c1)
+static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedColor* b, PaddedColor* c, PaddedColor* d, PaddedColor* e, PaddedColor* f, PaddedColor* g)
 {
-	// TODO how do I generalize this? The whole point of the two different ones is to natively manage the pin changes as memory changes
-	// I can make this gross but I don't want to.
-	switch (v0)
+	switch (v)
 	{
 	case Display_O:
 	case Display_0:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ClearPadded(&displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ColorToPadded(col, d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ClearPadded(g);
 			break;
 		}
 	case Display_1:
 		{
-			ClearPadded(&displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ClearPadded(&displayBuffer.seg0.D);
-			ClearPadded(&displayBuffer.seg0.E);
-			ClearPadded(&displayBuffer.seg0.F);
-			ClearPadded(&displayBuffer.seg0.G);
+			ClearPadded(a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ClearPadded(d);
+			ClearPadded(e);
+			ClearPadded(f);
+			ClearPadded(g);
 			break;
 		}
 	case Display_2:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ClearPadded(&displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ClearPadded(&displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ColorToPadded(col, b);
+			ClearPadded(c);
+			ColorToPadded(col, d);
+			ColorToPadded(col, e);
+			ClearPadded(f);
+			ColorToPadded(col, g);
 			break;                                 
 		}
 	case Display_3:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ClearPadded(&displayBuffer.seg0.E);
-			ClearPadded(&displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ColorToPadded(col, d);
+			ClearPadded(e);
+			ClearPadded(f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_4:
 		{
-			ClearPadded(&displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ClearPadded(&displayBuffer.seg0.D);
-			ClearPadded(&displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ClearPadded(a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ClearPadded(d);
+			ClearPadded(e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_S:
 	case Display_5:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ClearPadded(&displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ClearPadded(&displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ClearPadded(b);
+			ColorToPadded(col, c);
+			ColorToPadded(col, d);
+			ClearPadded(e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_6:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ClearPadded(&displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ClearPadded(b);
+			ColorToPadded(col, c);
+			ColorToPadded(col, d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_7:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ClearPadded(&displayBuffer.seg0.D);
-			ClearPadded(&displayBuffer.seg0.E);
-			ClearPadded(&displayBuffer.seg0.F);
-			ClearPadded(&displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ClearPadded(d);
+			ClearPadded(e);
+			ClearPadded(f);
+			ClearPadded(g);
 			break;
 		}
 	case Display_8:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ColorToPadded(col, d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_9:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ClearPadded(&displayBuffer.seg0.D);
-			ClearPadded(&displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ClearPadded(d);
+			ClearPadded(e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_A:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ClearPadded(&displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ClearPadded(d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_b:
 		{
-			ClearPadded(&displayBuffer.seg0.A);
-			ClearPadded(&displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ClearPadded(a);
+			ClearPadded(b);
+			ColorToPadded(col, c);
+			ColorToPadded(col, d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_C:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ClearPadded(&displayBuffer.seg0.B);
-			ClearPadded(&displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ClearPadded(&displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ClearPadded(b);
+			ClearPadded(c);
+			ColorToPadded(col, d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ClearPadded(g);
 			break;
 		}
 	case Display_d:
 		{
-			ClearPadded(&displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ClearPadded(&displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ClearPadded(a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ColorToPadded(col, d);
+			ColorToPadded(col, e);
+			ClearPadded(f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_E:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ClearPadded(&displayBuffer.seg0.B);
-			ClearPadded(&displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ClearPadded(b);
+			ClearPadded(c);
+			ColorToPadded(col, d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_F:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ClearPadded(&displayBuffer.seg0.B);
-			ClearPadded(&displayBuffer.seg0.C);
-			ClearPadded(&displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ClearPadded(b);
+			ClearPadded(c);
+			ClearPadded(d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_H:
 		{
-			ClearPadded(&displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ClearPadded(&displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ClearPadded(a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ClearPadded(d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_L:
 		{
-			ClearPadded(&displayBuffer.seg0.A);
-			ClearPadded(&displayBuffer.seg0.B);
-			ClearPadded(&displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ClearPadded(&displayBuffer.seg0.G);
+			ClearPadded(a);
+			ClearPadded(b);
+			ClearPadded(c);
+			ColorToPadded(col, d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ClearPadded(g);
 			break;
 		}
 	case Display_P:
 		{
-			ColorToPadded(c0, &displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ClearPadded(&displayBuffer.seg0.C);
-			ClearPadded(&displayBuffer.seg0.D);
-			ColorToPadded(c0, &displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ColorToPadded(col, a);
+			ColorToPadded(col, b);
+			ClearPadded(c);
+			ClearPadded(d);
+			ColorToPadded(col, e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_Y:
 		{
-			ClearPadded(&displayBuffer.seg0.A);
-			ColorToPadded(c0, &displayBuffer.seg0.B);
-			ColorToPadded(c0, &displayBuffer.seg0.C);
-			ColorToPadded(c0, &displayBuffer.seg0.D);
-			ClearPadded(&displayBuffer.seg0.E);
-			ColorToPadded(c0, &displayBuffer.seg0.F);
-			ColorToPadded(c0, &displayBuffer.seg0.G);
+			ClearPadded(a);
+			ColorToPadded(col, b);
+			ColorToPadded(col, c);
+			ColorToPadded(col, d);
+			ClearPadded(e);
+			ColorToPadded(col, f);
+			ColorToPadded(col, g);
 			break;
 		}
 	case Display_Nothing:
 		{
-			ClearPadded(&displayBuffer.seg0.A);
-			ClearPadded(&displayBuffer.seg0.B);
-			ClearPadded(&displayBuffer.seg0.C);
-			ClearPadded(&displayBuffer.seg0.D);
-			ClearPadded(&displayBuffer.seg0.E);
-			ClearPadded(&displayBuffer.seg0.F);
-			ClearPadded(&displayBuffer.seg0.G);
+			ClearPadded(a);
+			ClearPadded(b);
+			ClearPadded(c);
+			ClearPadded(d);
+			ClearPadded(e);
+			ClearPadded(f);
+			ClearPadded(g);
 			break;
 		}
 	}
+}
+
+void SetDisplay(SegmentVal v0, Color c0, SegmentVal v1, Color c1)
+{
+	// Kind of gross way to do this. But hey. It works.
+	FillBuffer(v0, c0, &displayBuffer.seg0.A, &displayBuffer.seg0.B, &displayBuffer.seg0.C, &displayBuffer.seg0.D, &displayBuffer.seg0.E, &displayBuffer.seg0.F, &displayBuffer.seg0.G);
+	FillBuffer(v1, c1, &displayBuffer.seg1.A, &displayBuffer.seg1.B, &displayBuffer.seg1.C, &displayBuffer.seg1.D, &displayBuffer.seg1.E, &displayBuffer.seg1.F, &displayBuffer.seg1.G);
+	
+	SendSPIDMA((uint8_t*)&displayBuffer, sizeof(displayBuffer));
+}
+
+SegmentVal GetSegmentForInt(uint8_t singleDecimal)
+{
+	if (singleDecimal > 9)
+	{
+		return Display_9;
+	}
+	return (SegmentVal)singleDecimal;
 }
