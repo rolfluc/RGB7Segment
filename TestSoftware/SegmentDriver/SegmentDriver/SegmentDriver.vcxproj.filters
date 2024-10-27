@@ -36,7 +36,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SegmentDriver.c">
+    <ClCompile Include="main.c">
       <Filter>Source files</Filter>
     </ClCompile>
     <ClCompile Include="system_stm32f0xx.c">
@@ -519,5 +519,28 @@
     <None Include="stm32.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
+    <ClCompile Include="SPI.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressableLED.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="SegmentInterface.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SPI.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddressableLED.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="SegmentInterface.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

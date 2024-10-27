@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Color.h"
 typedef enum
 {
 	Display_0 = 0,
@@ -25,5 +25,6 @@ typedef enum
 	Display_S,
 	Display_Y,
 	Display_Nothing,
-}DisplayStates;
+}SegmentVal;
 
+void SetDisplay(SegmentVal v0, Color c0, SegmentVal v1, Color c1);
