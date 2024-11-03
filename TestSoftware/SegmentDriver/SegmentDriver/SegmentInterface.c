@@ -52,6 +52,12 @@ static inline void ClearPadded(PaddedColor* c)
 	memset((uint8_t*)c, 0, sizeof(PaddedColor));
 }
 
+static inline void SetDark(PaddedColor* c)
+{
+	static const uint32_t darkColor = 0x88888888;
+	memset((uint32_t*)c, darkColor, sizeof(PaddedColor));
+}
+
 static inline void ColorToPadded(Color c, PaddedColor* pc)
 {
 	FillColor((uint8_t*)pc, c);
@@ -70,28 +76,28 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 			ColorToPadded(col, d);
 			ColorToPadded(col, e);
 			ColorToPadded(col, f);
-			ClearPadded(g);
+			SetDark(g);
 			break;
 		}
 	case Display_1:
 		{
-			ClearPadded(a);
+			SetDark(a);
 			ColorToPadded(col, b);
 			ColorToPadded(col, c);
-			ClearPadded(d);
-			ClearPadded(e);
-			ClearPadded(f);
-			ClearPadded(g);
+			SetDark(d);
+			SetDark(e);
+			SetDark(f);
+			SetDark(g);
 			break;
 		}
 	case Display_2:
 		{
 			ColorToPadded(col, a);
 			ColorToPadded(col, b);
-			ClearPadded(c);
+			SetDark(c);
 			ColorToPadded(col, d);
 			ColorToPadded(col, e);
-			ClearPadded(f);
+			SetDark(f);
 			ColorToPadded(col, g);
 			break;                                 
 		}
@@ -101,18 +107,18 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 			ColorToPadded(col, b);
 			ColorToPadded(col, c);
 			ColorToPadded(col, d);
-			ClearPadded(e);
-			ClearPadded(f);
+			SetDark(e);
+			SetDark(f);
 			ColorToPadded(col, g);
 			break;
 		}
 	case Display_4:
 		{
-			ClearPadded(a);
+			SetDark(a);
 			ColorToPadded(col, b);
 			ColorToPadded(col, c);
-			ClearPadded(d);
-			ClearPadded(e);
+			SetDark(d);
+			SetDark(e);
 			ColorToPadded(col, f);
 			ColorToPadded(col, g);
 			break;
@@ -121,10 +127,10 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 	case Display_5:
 		{
 			ColorToPadded(col, a);
-			ClearPadded(b);
+			SetDark(b);
 			ColorToPadded(col, c);
 			ColorToPadded(col, d);
-			ClearPadded(e);
+			SetDark(e);
 			ColorToPadded(col, f);
 			ColorToPadded(col, g);
 			break;
@@ -132,7 +138,7 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 	case Display_6:
 		{
 			ColorToPadded(col, a);
-			ClearPadded(b);
+			SetDark(b);
 			ColorToPadded(col, c);
 			ColorToPadded(col, d);
 			ColorToPadded(col, e);
@@ -145,10 +151,10 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 			ColorToPadded(col, a);
 			ColorToPadded(col, b);
 			ColorToPadded(col, c);
-			ClearPadded(d);
-			ClearPadded(e);
-			ClearPadded(f);
-			ClearPadded(g);
+			SetDark(d);
+			SetDark(e);
+			SetDark(f);
+			SetDark(g);
 			break;
 		}
 	case Display_8:
@@ -167,8 +173,8 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 			ColorToPadded(col, a);
 			ColorToPadded(col, b);
 			ColorToPadded(col, c);
-			ClearPadded(d);
-			ClearPadded(e);
+			SetDark(d);
+			SetDark(e);
 			ColorToPadded(col, f);
 			ColorToPadded(col, g);
 			break;
@@ -178,7 +184,7 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 			ColorToPadded(col, a);
 			ColorToPadded(col, b);
 			ColorToPadded(col, c);
-			ClearPadded(d);
+			SetDark(d);
 			ColorToPadded(col, e);
 			ColorToPadded(col, f);
 			ColorToPadded(col, g);
@@ -186,8 +192,8 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 		}
 	case Display_b:
 		{
-			ClearPadded(a);
-			ClearPadded(b);
+			SetDark(a);
+			SetDark(b);
 			ColorToPadded(col, c);
 			ColorToPadded(col, d);
 			ColorToPadded(col, e);
@@ -198,30 +204,30 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 	case Display_C:
 		{
 			ColorToPadded(col, a);
-			ClearPadded(b);
-			ClearPadded(c);
+			SetDark(b);
+			SetDark(c);
 			ColorToPadded(col, d);
 			ColorToPadded(col, e);
 			ColorToPadded(col, f);
-			ClearPadded(g);
+			SetDark(g);
 			break;
 		}
 	case Display_d:
 		{
-			ClearPadded(a);
+			SetDark(a);
 			ColorToPadded(col, b);
 			ColorToPadded(col, c);
 			ColorToPadded(col, d);
 			ColorToPadded(col, e);
-			ClearPadded(f);
+			SetDark(f);
 			ColorToPadded(col, g);
 			break;
 		}
 	case Display_E:
 		{
 			ColorToPadded(col, a);
-			ClearPadded(b);
-			ClearPadded(c);
+			SetDark(b);
+			SetDark(c);
 			ColorToPadded(col, d);
 			ColorToPadded(col, e);
 			ColorToPadded(col, f);
@@ -231,9 +237,9 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 	case Display_F:
 		{
 			ColorToPadded(col, a);
-			ClearPadded(b);
-			ClearPadded(c);
-			ClearPadded(d);
+			SetDark(b);
+			SetDark(c);
+			SetDark(d);
 			ColorToPadded(col, e);
 			ColorToPadded(col, f);
 			ColorToPadded(col, g);
@@ -241,10 +247,10 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 		}
 	case Display_H:
 		{
-			ClearPadded(a);
+			SetDark(a);
 			ColorToPadded(col, b);
 			ColorToPadded(col, c);
-			ClearPadded(d);
+			SetDark(d);
 			ColorToPadded(col, e);
 			ColorToPadded(col, f);
 			ColorToPadded(col, g);
@@ -252,21 +258,21 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 		}
 	case Display_L:
 		{
-			ClearPadded(a);
-			ClearPadded(b);
-			ClearPadded(c);
+			SetDark(a);
+			SetDark(b);
+			SetDark(c);
 			ColorToPadded(col, d);
 			ColorToPadded(col, e);
 			ColorToPadded(col, f);
-			ClearPadded(g);
+			SetDark(g);
 			break;
 		}
 	case Display_P:
 		{
 			ColorToPadded(col, a);
 			ColorToPadded(col, b);
-			ClearPadded(c);
-			ClearPadded(d);
+			SetDark(c);
+			SetDark(d);
 			ColorToPadded(col, e);
 			ColorToPadded(col, f);
 			ColorToPadded(col, g);
@@ -274,24 +280,24 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 		}
 	case Display_Y:
 		{
-			ClearPadded(a);
+			SetDark(a);
 			ColorToPadded(col, b);
 			ColorToPadded(col, c);
 			ColorToPadded(col, d);
-			ClearPadded(e);
+			SetDark(e);
 			ColorToPadded(col, f);
 			ColorToPadded(col, g);
 			break;
 		}
 	case Display_Nothing:
 		{
-			ClearPadded(a);
-			ClearPadded(b);
-			ClearPadded(c);
-			ClearPadded(d);
-			ClearPadded(e);
-			ClearPadded(f);
-			ClearPadded(g);
+			SetDark(a);
+			SetDark(b);
+			SetDark(c);
+			SetDark(d);
+			SetDark(e);
+			SetDark(f);
+			SetDark(g);
 			break;
 		}
 	}

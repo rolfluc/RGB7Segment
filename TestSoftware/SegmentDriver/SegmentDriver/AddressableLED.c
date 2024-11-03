@@ -6,7 +6,7 @@ static uint32_t colorTo4Byte(uint8_t colorByte)
 	static const uint8_t bitHigh = 0x0E;
 	static const uint8_t bitLow = 0x08;
 	uint32_t retVal = 0;
-	for (uint8_t i = 7; i > 0; i--)
+ 	for (int8_t i = 7; i > 0; i--)
 	{
 		// Check the topmost bit, remove 1 for next call, load the nibble to the right location.
 		uint8_t tmpByte = ((colorByte & (1 << i--)) == 0) ? (bitLow << 4) : (bitHigh << 4);

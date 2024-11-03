@@ -11,6 +11,16 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef * hspi)
 	_dmaRunning = false;
 }
 
+void SPI1_IRQHandler(void)
+{
+	HAL_SPI_IRQHandler(&spi1);
+}
+
+void DMA1_Channel2_3_IRQHandler(void)
+{
+	HAL_DMA_IRQHandler(&spi1dma);
+}
+
 static void _InitSPIPins()
 {
 	GPIO_InitTypeDef txPin;
@@ -25,7 +35,9 @@ static void _InitSPIPins()
 static void _InitSPIDMA()
 {
 	__DMA1_CLK_ENABLE();
-	spi1dma.ChannelIndex = 0; // TODO
+	__HAL_RCC_DMA1_CLK_ENABLE();
+	spi1dma.Instance = DMA1_Channel3;
+	//spi1dma.ChannelIndex = 0; // TODO
 	spi1dma.Init.Direction = DMA_MEMORY_TO_PERIPH;
 	spi1dma.Init.PeriphInc = DMA_PINC_DISABLE;
 	spi1dma.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
@@ -33,6 +45,8 @@ static void _InitSPIDMA()
 	spi1dma.Init.Priority = DMA_PRIORITY_MEDIUM;
 	spi1dma.Init.MemInc = DMA_MINC_ENABLE;
 	spi1dma.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+	HAL_NVIC_SetPriority(DMA1_Channel2_3_IRQn, 0, 0);
+	HAL_NVIC_EnableIRQ(DMA1_Channel2_3_IRQn);
 	HAL_DMA_Init(&spi1dma);
 	__HAL_LINKDMA(&spi1, hdmatx, spi1dma);
 }
@@ -41,6 +55,7 @@ void InitSPI()
 {
 	_InitSPIPins();
 	__SPI1_CLK_ENABLE();
+	__HAL_RCC_SPI1_CLK_ENABLE();
 	_InitSPIDMA();
 	spi1.Instance = SPI1;
 	spi1.Init.Mode = SPI_MODE_MASTER;
@@ -49,6 +64,7 @@ void InitSPI()
 	spi1.Init.CLKPolarity = SPI_POLARITY_LOW;
 	spi1.Init.CLKPhase = SPI_PHASE_1EDGE;
 	spi1.Init.NSS = SPI_NSS_SOFT;
+	spi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
 	spi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
 	spi1.Init.TIMode = SPI_TIMODE_DISABLE;
 	spi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
