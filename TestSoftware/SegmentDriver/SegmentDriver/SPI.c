@@ -16,10 +16,12 @@ void SPI1_IRQHandler(void)
 	HAL_SPI_IRQHandler(&spi1);
 }
 
+#if 0
 void DMA1_Channel2_3_IRQHandler(void)
 {
 	HAL_DMA_IRQHandler(&spi1dma);
 }
+#endif
 
 static void _InitSPIPins()
 {

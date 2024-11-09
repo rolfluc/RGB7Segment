@@ -1,6 +1,7 @@
 #include "SegmentInterface.h"
 #include "AddressableLED.h"
-#include "SPI.h"
+//#include "SPI.h"
+#include "Timer.h"
 #include <memory.h>
 // Total Data size, 2 x 7 segments, 3 colors per segment, 4 bits of data per bit of color
 // 24 bits of color, 24 * 4 (bits of SPI data) / 8 = 12 bytes
@@ -304,7 +305,7 @@ void SetDisplay(SegmentVal v0, Color c0, SegmentVal v1, Color c1)
 	FillBuffer(v0, c0, &displayBuffer.seg0.A, &displayBuffer.seg0.B, &displayBuffer.seg0.C, &displayBuffer.seg0.D, &displayBuffer.seg0.E, &displayBuffer.seg0.F, &displayBuffer.seg0.G);
 	FillBuffer(v1, c1, &displayBuffer.seg1.A, &displayBuffer.seg1.B, &displayBuffer.seg1.C, &displayBuffer.seg1.D, &displayBuffer.seg1.E, &displayBuffer.seg1.F, &displayBuffer.seg1.G);
 	
-	SendSPIDMA((uint8_t*)&displayBuffer, sizeof(displayBuffer));
+	//SendSPIDMA((uint8_t*)&displayBuffer, sizeof(displayBuffer));
 }
 
 SegmentVal GetSegmentForInt(uint8_t singleDecimal)
