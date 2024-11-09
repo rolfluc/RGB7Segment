@@ -12,9 +12,9 @@
 
 typedef struct 
 {
-	uint32_t R;
-	uint32_t G;
-	uint32_t B;
+	colorBuffer R;
+	colorBuffer G;
+	colorBuffer B;
 }PaddedColor;
 
 typedef struct 
@@ -47,20 +47,15 @@ typedef struct
 
 Display displayBuffer;
 
-static inline void ClearPadded(PaddedColor* c)
+static inline void ColorToPadded(Color c, PaddedColor* pc)
 {
-	memset((uint8_t*)c, 0, sizeof(PaddedColor));
+	FillColor((uint8_t*)pc, c);
 }
 
 static inline void SetDark(PaddedColor* c)
 {
-	static const uint32_t darkColor = 0x88888888;
-	memset((uint32_t*)c, darkColor, sizeof(PaddedColor));
-}
-
-static inline void ColorToPadded(Color c, PaddedColor* pc)
-{
-	FillColor((uint8_t*)pc, c);
+	static const Color ColorDark = { 0, 0, 0 };
+	ColorToPadded(ColorDark, c);
 }
 
 static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedColor* b, PaddedColor* c, PaddedColor* d, PaddedColor* e, PaddedColor* f, PaddedColor* g)

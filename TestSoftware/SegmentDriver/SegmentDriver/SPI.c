@@ -54,20 +54,19 @@ static void _InitSPIDMA()
 void InitSPI()
 {
 	_InitSPIPins();
-	__SPI1_CLK_ENABLE();
 	__HAL_RCC_SPI1_CLK_ENABLE();
 	_InitSPIDMA();
 	spi1.Instance = SPI1;
 	spi1.Init.Mode = SPI_MODE_MASTER;
 	spi1.Init.Direction = SPI_DIRECTION_1LINE;
 	spi1.Init.DataSize = SPI_DATASIZE_8BIT;
-	spi1.Init.CLKPolarity = SPI_POLARITY_LOW;
-	spi1.Init.CLKPhase = SPI_PHASE_2EDGE;
+	spi1.Init.CLKPolarity = SPI_POLARITY_HIGH;
+	spi1.Init.CLKPhase = SPI_PHASE_1EDGE;
 	spi1.Init.NSS = SPI_NSS_SOFT;
-	spi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
+	spi1.Init.FirstBit = SPI_FIRSTBIT_MSB; // TODO LSB may resolve endianness
 	spi1.Init.TIMode = SPI_TIMODE_DISABLE;
 	spi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-	spi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4; // TODO this matters a lot here.
+	spi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2; // TODO this matters a lot here.
 	spi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
 	spi1.Init.CRCPolynomial = 7;
 	spi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
@@ -77,7 +76,7 @@ void InitSPI()
 	HAL_NVIC_EnableIRQ(SPI1_IRQn);
 }
 
-void SendSPIDMA(uint8_t* data, uint8_t bytes)
+void SendSPIDMA(uint8_t* data, uint16_t bytes)
 {
 	HAL_SPI_Transmit_DMA(&spi1, data, bytes);
 	_dmaRunning = true;
