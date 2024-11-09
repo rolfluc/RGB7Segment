@@ -1,7 +1,7 @@
 #include "Timer.h"
 #include "stm32f0xx.h"
 
-TIM_HandleTypeDef htim1;
+TIM_HandleTypeDef htim;
 DMA_HandleTypeDef hdma_tim1_ch1;
 
 void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
@@ -35,59 +35,20 @@ static void InitGPIOs()
 	GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
 	GPIO_InitStruct.Pull = GPIO_NOPULL;
 	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-	GPIO_InitStruct.Alternate = GPIO_AF2_TIM1;
+	GPIO_InitStruct.Alternate = GPIO_AF5_TIM17;
 	HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 }
 
 static void MX_Init(void)
 {
-	__HAL_RCC_TIM1_CLK_ENABLE();
+	__HAL_RCC_TIM17_CLK_ENABLE();
 	TIM_MasterConfigTypeDef sMasterConfig = { 0 };
 	TIM_OC_InitTypeDef sConfigOC = { 0 };
 	TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = { 0 };
-
-	htim1.Instance = TIM1;
-	htim1.Init.Prescaler = 0;
-	htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-	htim1.Init.Period = 100;
-	htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-	htim1.Init.RepetitionCounter = 0;
-	htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-	if (HAL_TIM_PWM_Init(&htim1) != HAL_OK)
-	{
-		__ASM("BKPT 255");
-	}
-	sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-	sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-	if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
-	{
-		__ASM("BKPT 255");
-	}
-	sConfigOC.OCMode = TIM_OCMODE_PWM1;
-	sConfigOC.Pulse = 0;
-	sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-	sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
-	sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-	sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
-	sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
-	if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-	{
-		__ASM("BKPT 255");
-	}
-	sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
-	sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
-	sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
-	sBreakDeadTimeConfig.DeadTime = 0;
-	sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
-	sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
-	sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
-	if (HAL_TIMEx_ConfigBreakDeadTime(&htim1, &sBreakDeadTimeConfig) != HAL_OK)
-	{
-		__ASM("BKPT 255");
-	}
+	
 	InitGPIOs();
 
-	hdma_tim1_ch1.Instance = DMA1_Channel2;
+	hdma_tim1_ch1.Instance = DMA1_Channel1;
 	hdma_tim1_ch1.Init.Direction = DMA_MEMORY_TO_PERIPH;
 	hdma_tim1_ch1.Init.PeriphInc = DMA_PINC_DISABLE;
 	hdma_tim1_ch1.Init.MemInc = DMA_MINC_ENABLE;
@@ -100,17 +61,63 @@ static void MX_Init(void)
 		__ASM("BKPT 255");
 	}
 
-	__HAL_LINKDMA(&htim1, hdma[TIM_DMA_ID_CC1], hdma_tim1_ch1);
+	__HAL_LINKDMA(&htim, hdma[TIM_DMA_ID_CC1], hdma_tim1_ch1);
+	__HAL_LINKDMA(&htim, hdma[TIM_DMA_ID_UPDATE], hdma_tim1_ch1);
+
+	htim.Instance = TIM17;
+	htim.Init.Prescaler = 0;
+	htim.Init.CounterMode = TIM_COUNTERMODE_UP;
+	htim.Init.Period = 100;
+	htim.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+	htim.Init.RepetitionCounter = 0;
+	htim.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+	if (HAL_TIM_Base_Init(&htim) != HAL_OK)
+	{
+		__ASM("BKPT 255");
+	}
+	if (HAL_TIM_PWM_Init(&htim) != HAL_OK)
+	{
+		__ASM("BKPT 255");
+	}
+	sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+	sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+	if (HAL_TIMEx_MasterConfigSynchronization(&htim, &sMasterConfig) != HAL_OK)
+	{
+		__ASM("BKPT 255");
+	}
+	sConfigOC.OCMode = TIM_OCMODE_PWM1;
+	sConfigOC.Pulse = 0;
+	sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+	sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
+	sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+	sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
+	sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+	if (HAL_TIM_PWM_ConfigChannel(&htim, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+	{
+		__ASM("BKPT 255");
+	}
+	sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
+	sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
+	sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
+	sBreakDeadTimeConfig.DeadTime = 0;
+	sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
+	sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
+	sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
+	if (HAL_TIMEx_ConfigBreakDeadTime(&htim, &sBreakDeadTimeConfig) != HAL_OK)
+	{
+		__ASM("BKPT 255");
+	}
+	
 }
 
 
 void InitTimer()
 {
-	MX_Init();
 	MX_DMA_Init();
+	MX_Init();
 }
 
 void SendTimerDMA(uint8_t* buffer, uint16_t count)
 {
-	HAL_TIM_PWM_Start_DMA(&htim1, TIM_CHANNEL_1, (uint32_t*)buffer, count);
+	HAL_TIM_PWM_Start_DMA(&htim, TIM_CHANNEL_1, (uint32_t*)buffer, count);
 }
