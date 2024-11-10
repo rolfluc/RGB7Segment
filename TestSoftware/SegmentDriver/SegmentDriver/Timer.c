@@ -14,6 +14,16 @@ void DMA1_Channel2_3_IRQHandler(void)
 	HAL_DMA_IRQHandler(&hdma_tim1_ch1);
 }
 
+void DMA1_Channel1_IRQHandler(void)
+{
+	HAL_DMA_IRQHandler(&hdma_tim1_ch1);
+}
+
+void TIM17_IRQHandler(void)
+{
+	HAL_TIM_IRQHandler(&htim);
+}
+
 static void MX_DMA_Init(void)
 {
 
@@ -52,17 +62,14 @@ static void MX_Init(void)
 	hdma_tim1_ch1.Init.Direction = DMA_MEMORY_TO_PERIPH;
 	hdma_tim1_ch1.Init.PeriphInc = DMA_PINC_DISABLE;
 	hdma_tim1_ch1.Init.MemInc = DMA_MINC_ENABLE;
-	hdma_tim1_ch1.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
-	hdma_tim1_ch1.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+	hdma_tim1_ch1.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
+	hdma_tim1_ch1.Init.MemDataAlignment = DMA_PDATAALIGN_HALFWORD;
 	hdma_tim1_ch1.Init.Mode = DMA_NORMAL;
 	hdma_tim1_ch1.Init.Priority = DMA_PRIORITY_LOW;
 	if (HAL_DMA_Init(&hdma_tim1_ch1) != HAL_OK)
 	{
 		__ASM("BKPT 255");
 	}
-
-	__HAL_LINKDMA(&htim, hdma[TIM_DMA_ID_CC1], hdma_tim1_ch1);
-	__HAL_LINKDMA(&htim, hdma[TIM_DMA_ID_UPDATE], hdma_tim1_ch1);
 
 	htim.Instance = TIM17;
 	htim.Init.Prescaler = 0;
@@ -79,6 +86,10 @@ static void MX_Init(void)
 	{
 		__ASM("BKPT 255");
 	}
+	
+	__HAL_LINKDMA(&htim, hdma[TIM_DMA_ID_CC1], hdma_tim1_ch1);
+	__HAL_LINKDMA(&htim, hdma[TIM_DMA_ID_UPDATE], hdma_tim1_ch1);
+
 	sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
 	sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
 	if (HAL_TIMEx_MasterConfigSynchronization(&htim, &sMasterConfig) != HAL_OK)
@@ -107,7 +118,8 @@ static void MX_Init(void)
 	{
 		__ASM("BKPT 255");
 	}
-	
+	HAL_NVIC_SetPriority(TIM17_IRQn, 1, 3);
+	HAL_NVIC_EnableIRQ(TIM17_IRQn);
 }
 
 
@@ -115,9 +127,11 @@ void InitTimer()
 {
 	MX_DMA_Init();
 	MX_Init();
+	HAL_TIM_PWM_Stop_DMA(&htim, TIM_CHANNEL_1);
 }
 
 void SendTimerDMA(uint8_t* buffer, uint16_t count)
 {
+	HAL_TIM_PWM_Stop_DMA(&htim, TIM_CHANNEL_1);
 	HAL_TIM_PWM_Start_DMA(&htim, TIM_CHANNEL_1, (uint32_t*)buffer, count);
 }
