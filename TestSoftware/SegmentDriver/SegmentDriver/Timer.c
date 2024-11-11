@@ -78,6 +78,8 @@ static void MX_Init(void)
 	htim.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
 	htim.Init.RepetitionCounter = 0;
 	htim.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+	// TODO following probs
+	//HAL_TIM_ConfigClockSource
 	if (HAL_TIM_Base_Init(&htim) != HAL_OK)
 	{
 		__ASM("BKPT 255");
