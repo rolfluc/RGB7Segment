@@ -698,5 +698,8 @@
     <ClInclude Include="Timer.h">
       <Filter>Header files</Filter>
     </ClInclude>
+    <ClInclude Include="LEDTiming.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

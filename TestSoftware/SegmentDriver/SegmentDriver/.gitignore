@@ -51,3 +51,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# User Specific
+SegmentDriver.vcxproj.user
+SegmentDriver-Release.vgdbsettings
+SegmentDriver-Debug.vgdbsettings.rolf0.user
+.visualgdb/
+VisualGDB/

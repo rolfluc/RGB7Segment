@@ -1,5 +1,6 @@
 #include "Timer.h"
 #include "stm32g4xx.h"
+#include "LEDTiming.h"
 
 TIM_HandleTypeDef htim;
 DMA_HandleTypeDef hdma_tim1_ch1;
@@ -71,7 +72,7 @@ static void MX_Init(void)
 	htim.Instance = TIM1;
 	htim.Init.Prescaler = 0;
 	htim.Init.CounterMode = TIM_COUNTERMODE_UP;
-	htim.Init.Period = 75;
+	htim.Init.Period = PERIOD_COUNTS;
 	htim.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
 	htim.Init.RepetitionCounter = 0;
 	htim.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -114,8 +115,6 @@ static void MX_Init(void)
 	{
 		__ASM("BKPT 255");
 	}
-	//HAL_NVIC_SetPriority(TIM17_IRQn, 0, 2);
-	//HAL_NVIC_EnableIRQ(TIM17_IRQn);
 }
 
 

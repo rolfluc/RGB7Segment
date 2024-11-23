@@ -61,6 +61,7 @@
     <ClCompile Include="SegmentInterface.c" />
     <ClCompile Include="system_stm32g4xx.c" />
     <ClCompile Include="Timer.c" />
+    <ClInclude Include="LEDTiming.h" />
     <ClInclude Include="Timer.h" />
     <None Include="stm32.props" />
     <ClInclude Include="AddressableLED.h" />

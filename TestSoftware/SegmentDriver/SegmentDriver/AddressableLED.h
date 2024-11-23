@@ -2,17 +2,12 @@
 #include <stdint.h>
 #include "Color.h"
 
+// Need 1 half word, per color bit.
+// 1 LED Color is 24 half words, so 48 bytes.
+#define BUFFER_SIZE 8
 typedef struct 
 {
-	uint8_t one;
-	uint8_t two;
-	uint8_t three;
-}bitBuffer_24;
-
-#define BUFFER_SIZE 12
-typedef struct 
-{
-	uint8_t buffer[BUFFER_SIZE];
+	uint16_t buffer[BUFFER_SIZE];
 }colorBuffer;
 
 // Places the respective color at the prescribed location. Assumes the buffer has been allocated.
