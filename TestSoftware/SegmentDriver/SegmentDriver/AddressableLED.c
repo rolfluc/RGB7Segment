@@ -3,24 +3,23 @@
 #include "LEDTiming.h"
 
 
-colorBuffer byteToBuffer(uint8_t colorByte)
+void byteToBuffer(colorBuffer* buffer, uint8_t colorByte)
 {
 	static const uint16_t bitHigh = BIT_HIGH_COUNTS;
 	static const uint16_t bitLow = BIT_LOW_COUNTS;
-	colorBuffer buffer;
 	// Preserve endianess
-	for (int8_t i = 7; i > 0; i--)
+	for (int8_t i = 7; i >= 0; i--)
 	{
-		
+		buffer->buffer[i] = (colorByte & (1 << i)) == 1 ? bitHigh : bitLow;
 	}
 }
 
-uint8_t FillColor(uint8_t* buffer, Color color)
+void FillColor(PaddedColor* buffer, Color color)
 {
-	
-	uint8_t writeCount = 0;
-	
+	byteToBuffer(&(buffer->R), color.R);
+	byteToBuffer(&(buffer->G), color.G);
+	byteToBuffer(&(buffer->B), color.B);
 #ifdef RGBW
+	byteToBuffer(&(buffer->W), color.W);
 #endif // RGBW
-	return writeCount;
 }

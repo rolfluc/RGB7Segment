@@ -75,8 +75,7 @@ int main(void)
 	{
 		// TODO something dumb but an idea. Right now requires 16 bits, per bit. So for 1 LED, you need 24x16 bits, so 48 bytes per LED.
 		// One idea, DMA 8bit->16 bit.
-		SendTimerDMA((uint8_t*)&tmpBuffer, 4*sizeof(uint16_t));
-		//SetDisplay(v0, c0, v1, c1);
+		SetDisplay(v0, c0, v1, c1);
 		HAL_Delay(500);
 	}
 }

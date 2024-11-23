@@ -13,13 +13,6 @@
 
 typedef struct 
 {
-	colorBuffer R;
-	colorBuffer G;
-	colorBuffer B;
-}PaddedColor;
-
-typedef struct 
-{
 	PaddedColor D;
 	PaddedColor E;
 	PaddedColor F;
@@ -48,15 +41,15 @@ typedef struct
 
 Display displayBuffer;
 
-static inline void ColorToPadded(Color c, PaddedColor* pc)
+static inline void ColorToBuffer(Color c, PaddedColor* pc)
 {
-	FillColor((uint8_t*)pc, c);
+	FillColor(pc, c);
 }
 
 static inline void SetDark(PaddedColor* c)
 {
 	static const Color ColorDark = { 0, 0, 0 };
-	ColorToPadded(ColorDark, c);
+	ColorToBuffer(ColorDark, c);
 }
 
 static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedColor* b, PaddedColor* c, PaddedColor* d, PaddedColor* e, PaddedColor* f, PaddedColor* g)
@@ -66,20 +59,20 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 	case Display_O:
 	case Display_0:
 		{
-			ColorToPadded(col, a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
-			ColorToPadded(col, d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
+			ColorToBuffer(col, a);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
+			ColorToBuffer(col, d);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
 			SetDark(g);
 			break;
 		}
 	case Display_1:
 		{
 			SetDark(a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
 			SetDark(d);
 			SetDark(e);
 			SetDark(f);
@@ -88,65 +81,65 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 		}
 	case Display_2:
 		{
-			ColorToPadded(col, a);
-			ColorToPadded(col, b);
+			ColorToBuffer(col, a);
+			ColorToBuffer(col, b);
 			SetDark(c);
-			ColorToPadded(col, d);
-			ColorToPadded(col, e);
+			ColorToBuffer(col, d);
+			ColorToBuffer(col, e);
 			SetDark(f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, g);
 			break;                                 
 		}
 	case Display_3:
 		{
-			ColorToPadded(col, a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
-			ColorToPadded(col, d);
+			ColorToBuffer(col, a);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
+			ColorToBuffer(col, d);
 			SetDark(e);
 			SetDark(f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_4:
 		{
 			SetDark(a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
 			SetDark(d);
 			SetDark(e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_S:
 	case Display_5:
 		{
-			ColorToPadded(col, a);
+			ColorToBuffer(col, a);
 			SetDark(b);
-			ColorToPadded(col, c);
-			ColorToPadded(col, d);
+			ColorToBuffer(col, c);
+			ColorToBuffer(col, d);
 			SetDark(e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_6:
 		{
-			ColorToPadded(col, a);
+			ColorToBuffer(col, a);
 			SetDark(b);
-			ColorToPadded(col, c);
-			ColorToPadded(col, d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, c);
+			ColorToBuffer(col, d);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_7:
 		{
-			ColorToPadded(col, a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
+			ColorToBuffer(col, a);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
 			SetDark(d);
 			SetDark(e);
 			SetDark(f);
@@ -155,101 +148,101 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 		}
 	case Display_8:
 		{
-			ColorToPadded(col, a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
-			ColorToPadded(col, d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, a);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
+			ColorToBuffer(col, d);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_9:
 		{
-			ColorToPadded(col, a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
+			ColorToBuffer(col, a);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
 			SetDark(d);
 			SetDark(e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_A:
 		{
-			ColorToPadded(col, a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
+			ColorToBuffer(col, a);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
 			SetDark(d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_b:
 		{
 			SetDark(a);
 			SetDark(b);
-			ColorToPadded(col, c);
-			ColorToPadded(col, d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, c);
+			ColorToBuffer(col, d);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_C:
 		{
-			ColorToPadded(col, a);
+			ColorToBuffer(col, a);
 			SetDark(b);
 			SetDark(c);
-			ColorToPadded(col, d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
+			ColorToBuffer(col, d);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
 			SetDark(g);
 			break;
 		}
 	case Display_d:
 		{
 			SetDark(a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
-			ColorToPadded(col, d);
-			ColorToPadded(col, e);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
+			ColorToBuffer(col, d);
+			ColorToBuffer(col, e);
 			SetDark(f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_E:
 		{
-			ColorToPadded(col, a);
+			ColorToBuffer(col, a);
 			SetDark(b);
 			SetDark(c);
-			ColorToPadded(col, d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, d);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_F:
 		{
-			ColorToPadded(col, a);
+			ColorToBuffer(col, a);
 			SetDark(b);
 			SetDark(c);
 			SetDark(d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_H:
 		{
 			SetDark(a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
 			SetDark(d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_L:
@@ -257,32 +250,32 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 			SetDark(a);
 			SetDark(b);
 			SetDark(c);
-			ColorToPadded(col, d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
+			ColorToBuffer(col, d);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
 			SetDark(g);
 			break;
 		}
 	case Display_P:
 		{
-			ColorToPadded(col, a);
-			ColorToPadded(col, b);
+			ColorToBuffer(col, a);
+			ColorToBuffer(col, b);
 			SetDark(c);
 			SetDark(d);
-			ColorToPadded(col, e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, e);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_Y:
 		{
 			SetDark(a);
-			ColorToPadded(col, b);
-			ColorToPadded(col, c);
-			ColorToPadded(col, d);
+			ColorToBuffer(col, b);
+			ColorToBuffer(col, c);
+			ColorToBuffer(col, d);
 			SetDark(e);
-			ColorToPadded(col, f);
-			ColorToPadded(col, g);
+			ColorToBuffer(col, f);
+			ColorToBuffer(col, g);
 			break;
 		}
 	case Display_Nothing:
@@ -305,7 +298,7 @@ void SetDisplay(SegmentVal v0, Color c0, SegmentVal v1, Color c1)
 	FillBuffer(v0, c0, &displayBuffer.seg0.A, &displayBuffer.seg0.B, &displayBuffer.seg0.C, &displayBuffer.seg0.D, &displayBuffer.seg0.E, &displayBuffer.seg0.F, &displayBuffer.seg0.G);
 	FillBuffer(v1, c1, &displayBuffer.seg1.A, &displayBuffer.seg1.B, &displayBuffer.seg1.C, &displayBuffer.seg1.D, &displayBuffer.seg1.E, &displayBuffer.seg1.F, &displayBuffer.seg1.G);
 	
-	//SendTimerDMA((uint8_t*)&tmpBuffer, 4*sizeof(uint16_t));
+	SendTimerDMA((uint8_t*)&displayBuffer, sizeof(Display));
 }
 
 SegmentVal GetSegmentForInt(uint8_t singleDecimal)
