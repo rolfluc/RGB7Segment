@@ -141,7 +141,7 @@ void SystemClock_Config(void)
 	}
 }
 
-uint16_t tmpBuffer[6] = { 19, 57, 19, 57};
+uint16_t tmpBuffer[4] = { 19, 57, 19, 57};
 
 int main(void)
 {
@@ -156,7 +156,6 @@ int main(void)
 
 	for (;;)
 	{
-		//HAL_Delay(500);
 		SendTimerDMA((uint8_t*)&tmpBuffer, 4*sizeof(uint16_t));
 		//SetDisplay(v0, c0, v1, c1);
 		HAL_Delay(500);

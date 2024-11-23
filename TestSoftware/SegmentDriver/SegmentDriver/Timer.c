@@ -127,6 +127,5 @@ void InitTimer()
 
 void SendTimerDMA(uint8_t* buffer, uint16_t count)
 {
-	HAL_TIM_PWM_Stop_DMA(&htim, TIM_CHANNEL_1);
 	HAL_TIM_PWM_Start_DMA(&htim, TIM_CHANNEL_1, (uint32_t*)buffer, count);
 }
