@@ -8,6 +8,7 @@
 typedef struct 
 {
 	uint16_t buffer[BUFFER_SIZE];
+	//uint8_t buffer[BUFFER_SIZE];
 }colorBuffer;
 
 typedef struct 

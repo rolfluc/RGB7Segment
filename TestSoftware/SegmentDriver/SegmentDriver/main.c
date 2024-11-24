@@ -57,9 +57,6 @@ void SystemClock_Config(void)
 	}
 }
 
-//uint16_t tmpBuffer[4] = { 19, 57, 19, 57};
-uint16_t tmpBuffer[4] = { BIT_LOW_COUNTS, BIT_HIGH_COUNTS, BIT_LOW_COUNTS, BIT_HIGH_COUNTS};
-
 int main(void)
 {
 	HAL_Init();
@@ -68,14 +65,19 @@ int main(void)
 	InitTimer();
 	SegmentVal v0 = GetSegmentForInt(3);
 	SegmentVal v1 = GetSegmentForInt(6);
-	Color c0 = { 0x00, 0x00, 0x00 };
-	Color c1 = { 0x00, 0x00, 0x00 };
+	Color c0 = { 0x00, 0x0f, 0x00 };
+	Color c1 = { 0x00, 0x0f, 0x0f };
+	Color c2 = { 0x0f, 0x0f, 0x00 };
+	Color c3 = { 0x00, 0x0f, 0x0f };
+	
 
 	for (;;)
 	{
-		// TODO something dumb but an idea. Right now requires 16 bits, per bit. So for 1 LED, you need 24x16 bits, so 48 bytes per LED.
-		// One idea, DMA 8bit->16 bit.
 		SetDisplay(v0, c0, v1, c1);
-		HAL_Delay(500);
+		HAL_Delay(1000);
+		SetDisplay(v0, c2, v1, c1);
+		HAL_Delay(1000);
+		SetDisplay(v0, c3, v1, c1);
+		HAL_Delay(1000);
 	}
 }

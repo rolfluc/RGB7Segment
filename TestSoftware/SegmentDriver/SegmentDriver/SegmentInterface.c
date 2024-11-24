@@ -299,6 +299,7 @@ void SetDisplay(SegmentVal v0, Color c0, SegmentVal v1, Color c1)
 	FillBuffer(v1, c1, &displayBuffer.seg1.A, &displayBuffer.seg1.B, &displayBuffer.seg1.C, &displayBuffer.seg1.D, &displayBuffer.seg1.E, &displayBuffer.seg1.F, &displayBuffer.seg1.G);
 	
 	SendTimerDMA((uint8_t*)&displayBuffer, sizeof(Display) / sizeof(uint16_t));
+	//SendTimerDMA((uint8_t*)&displayBuffer, sizeof(Display));
 }
 
 SegmentVal GetSegmentForInt(uint8_t singleDecimal)
