@@ -100,15 +100,15 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "03280b77-438f-4bb8-b2e5-2529b414dcd4")
-		(at 210.137501 81.5625 90)
+		(at 208.875 81.45 90)
 		(property "Reference" "B2"
-			(at 1.55 -2.137501 90)
+			(at 2.7 -2.0375 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "ed120da3-3988-47e0-bf51-423da6ea500e")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -281,7 +281,7 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "12198949-155f-40c4-bdcc-98bc274588ed")
-		(at 196.1375 83.75)
+		(at 196.5875 83.75)
 		(property "Reference" "G1"
 			(at 1.6 -2.25 0)
 			(unlocked yes)
@@ -289,7 +289,7 @@
 			(uuid "83877107-c59d-4c04-9705-8e473af3505f")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -462,7 +462,7 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "3cb23bdd-6cfd-4545-be1a-bf0c884cec12")
-		(at 196.1375 89.9625)
+		(at 196.5875 89.9625)
 		(property "Reference" "D1"
 			(at 1.4625 -2.1625 0)
 			(unlocked yes)
@@ -470,7 +470,7 @@
 			(uuid "e782d14d-cca8-4ce0-bb51-79a70ff89b7f")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -643,15 +643,15 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "492e0a7a-c6d6-4880-8c4a-c6c502bab8b2")
-		(at 207.6125 76.4375 180)
+		(at 207.05 76.4375 180)
 		(property "Reference" "A2"
-			(at 4.575 -0.462499 180)
+			(at -1.1875 -0.4125 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "7a51db9a-92db-4f82-92b6-7ba3bc536e3b")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -828,13 +828,13 @@
 		(descr "Through hole straight pin header, 1x02, 1.27mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 1.27mm single row")
 		(property "Reference" "J1"
-			(at 0 -1.695 90)
+			(at -2.05 0.6 -90)
 			(layer "F.SilkS")
 			(uuid "286fa43c-4cf1-4655-9d06-c7aa235ca05f")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.125)
 				)
 			)
 		)
@@ -1111,16 +1111,16 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "6d674a66-d155-4606-a15a-09e6f421fad8")
-		(at 206.4875 79.5875)
+		(at 205.6 80.05)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C12"
-			(at 0 -1.16 0)
+			(at -0.25 -0.9 0)
 			(layer "F.SilkS")
 			(uuid "259f1d1f-0b6c-414a-97f6-24bb87ee1cf5")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -1324,7 +1324,7 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "88e2d266-4c14-4a33-8975-695b7531eb08")
-		(at 205.025 83.55)
+		(at 204.4625 83.75)
 		(property "Reference" "G2"
 			(at 1.6 -2.25 0)
 			(unlocked yes)
@@ -1332,7 +1332,7 @@
 			(uuid "44e7f3c1-3ddf-4136-bfe5-5ec173ac79e8")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -1386,7 +1386,6 @@
 			)
 		)
 		(property ki_fp_filters "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*")
-		(path "/3d510844-3c65-49a4-a210-b2dec1a7cada")
 		(sheetname "Root")
 		(sheetfile "RGB7Segment.kicad_sch")
 		(attr smd)
@@ -1505,17 +1504,17 @@
 	(footprint "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 		(layer "F.Cu")
 		(uuid "8a8aa151-24cd-4bcc-9ccc-ffc3e80eb138")
-		(at 201.229999 90.25 90)
+		(at 201.23 89.9 90)
 		(descr "Through hole straight pin header, 1x02, 1.27mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 1.27mm single row")
 		(property "Reference" "J2"
-			(at 0 -1.695 90)
+			(at 2.15 0.72 270)
 			(layer "F.SilkS")
 			(uuid "dc2f9dec-d41a-4a81-b60f-89ac394c69e3")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.5 0.5)
+					(thickness 0.125)
 				)
 			)
 		)
@@ -1796,12 +1795,12 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C13"
-			(at 0 -1.16 0)
+			(at 0 -0.95 0)
 			(layer "F.SilkS")
 			(uuid "7a02a46f-3c88-426d-9e7c-7cea263e506e")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -2005,15 +2004,15 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "8fbadebf-d1ae-499d-8360-c380e44ef2c0")
-		(at 202.7375 78.6375 -90)
+		(at 202.6875 78.75 -90)
 		(property "Reference" "F2"
-			(at -1.8375 -0.45 -90)
+			(at 2.6 -2.15 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "90365626-8715-4926-b9b0-4007cce5adfc")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -2186,15 +2185,15 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "9004152b-34e6-42b7-9eca-4688f7da7e39")
-		(at 193.6875 84.8875 -90)
+		(at 194.8 84.94375 -90)
 		(property "Reference" "E1"
-			(at -1.65 -0.35 -90)
+			(at -1.65 -0.35 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "ee89aff6-9d80-4d29-b740-c1e38682fca2")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -2367,7 +2366,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9c7e019a-0d71-4d5e-8686-e6300a255f89")
-		(at 206.4875 86.3875)
+		(at 205.85 86.25)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C14"
@@ -2376,7 +2375,7 @@
 			(uuid "127b7227-24e0-460c-b90b-16bdc54a8285")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -2580,7 +2579,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "a0833d4f-5518-439d-9161-92c3212a6a16")
-		(at 197.48 80)
+		(at 197.93 80)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C10"
@@ -2589,7 +2588,7 @@
 			(uuid "c23c813e-31b3-4398-9810-0dbec4c9a614")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -2793,15 +2792,15 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "a6b09b58-8373-4d67-a577-e7cb9ae10870")
-		(at 198.8625 76.4375 180)
+		(at 199.3125 76.4375 180)
 		(property "Reference" "A1"
-			(at -1.7375 -0.562501 180)
+			(at 4.1125 -0.4625 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "0d66ef0b-ec36-406b-89ab-e9ea15dddb9c")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -2974,7 +2973,7 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "c750c323-0779-44a2-aea4-daf2db8f0746")
-		(at 201.149999 81.55 90)
+		(at 201.0375 81.45 90)
 		(property "Reference" "B1"
 			(at 1.55 -2.149999 90)
 			(unlocked yes)
@@ -2982,7 +2981,7 @@
 			(uuid "0f90779e-c410-4dcb-86d9-0d6193819b02")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -3155,7 +3154,7 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "c77f5711-3550-4d6a-915c-b06739af5af1")
-		(at 205.025 89.9625)
+		(at 204.4625 89.9625)
 		(property "Reference" "D2"
 			(at 4.5625 -0.3625 0)
 			(unlocked yes)
@@ -3163,7 +3162,7 @@
 			(uuid "42cb3ed0-75f8-4e22-abb4-b99e91e5d32a")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -3217,7 +3216,6 @@
 			)
 		)
 		(property ki_fp_filters "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*")
-		(path "/388e50c7-9a59-478a-9ccf-ebd88218753f")
 		(sheetname "Root")
 		(sheetfile "RGB7Segment.kicad_sch")
 		(attr smd)
@@ -3336,15 +3334,15 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "d250ec55-c255-4642-8340-f5979fe35c6a")
-		(at 210.15 87.75 90)
+		(at 208.875 87.65625 90)
 		(property "Reference" "C2"
-			(at 4.5625 -0.5625 90)
+			(at 4.45625 -0.375 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "6264cb8c-cd52-4fe7-a66f-618169ae4d1a")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -3398,7 +3396,6 @@
 			)
 		)
 		(property ki_fp_filters "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*")
-		(path "/29674630-f3d3-4e8b-9805-935ba7d20f57")
 		(sheetname "Root")
 		(sheetfile "RGB7Segment.kicad_sch")
 		(attr smd)
@@ -3517,15 +3514,15 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "df2a7937-a488-4597-b451-4d8c7a4c7da7")
-		(at 193.6875 78.6375 -90)
+		(at 194.8 78.74375 -90)
 		(property "Reference" "F1"
-			(at -1.6875 -0.5625 -90)
+			(at 2.60625 -2.1 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "e6069fb4-5599-4e48-bbe3-6e59dc855b3f")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -3698,7 +3695,7 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "e01e905e-a36c-47c1-b739-87908aadd686")
-		(at 202.7375 85.0375 -90)
+		(at 202.8 84.94375 -90)
 		(property "Reference" "E2"
 			(at 2.4625 -2.2625 90)
 			(unlocked yes)
@@ -3706,7 +3703,7 @@
 			(uuid "80500d10-fffb-4b60-b178-3ad5685b8ddd")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -3879,15 +3876,15 @@
 	(footprint "Library:12-23C"
 		(layer "F.Cu")
 		(uuid "eb12cce0-0525-4a9a-8719-5e81270f57f2")
-		(at 201.149999 87.75 90)
+		(at 201.0375 87.65625 90)
 		(property "Reference" "C1"
-			(at 4.55 -0.549999 90)
+			(at 4.05625 -0.3875 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "50f262f9-a1dd-4fc8-92f3-fdf75e5f25b5")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -4060,7 +4057,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f890e200-5076-4ed0-93d8-ccf5c57efa89")
-		(at 197.5 86.6)
+		(at 197.95 86.6)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C11"
@@ -4069,7 +4066,7 @@
 			(uuid "d592c1dd-7d86-4479-b488-d5e58e050e02")
 			(effects
 				(font
-					(size 1 1)
+					(size 0.75 0.75)
 					(thickness 0.15)
 				)
 			)
@@ -4269,22 +4266,6 @@
 				(xyz 0 0 0)
 			)
 		)
-	)
-	(segment
-		(start 210.187501 81.8125)
-		(end 210.187501 81.887501)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "1ede629e-722c-40bc-8e00-9331c5d86227")
-	)
-	(segment
-		(start 210.187501 81.8125)
-		(end 210.187501 81.937501)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "23aa38e1-f6bf-41b1-83e2-c2d0575a9888")
 	)
 	(segment
 		(start 204.775 83.6)
