@@ -10,7 +10,7 @@ void byteToBuffer(colorBuffer* buffer, uint8_t colorByte)
 	// Preserve endianess
 	for (int8_t i = 7; i >= 0; i--)
 	{
-		buffer->buffer[i] = (colorByte & (1 << i)) == 1 ? bitHigh : bitLow;
+		buffer->buffer[i] = ((colorByte & (1 << i)) > 0) ? bitHigh : bitLow;
 	}
 }
 

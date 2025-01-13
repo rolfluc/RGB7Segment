@@ -33,7 +33,7 @@ void SystemClock_Config(void)
 	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
 	RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
 	RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
-	RCC_OscInitStruct.PLL.PLLN = 8;
+	RCC_OscInitStruct.PLL.PLLN = 16;
 	RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
 	RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
 	RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
@@ -63,21 +63,21 @@ int main(void)
 	SystemClock_Config();
 
 	InitTimer();
-	SegmentVal v0 = GetSegmentForInt(3);
-	SegmentVal v1 = GetSegmentForInt(6);
-	Color c0 = { 0x00, 0x0f, 0x00 };
-	Color c1 = { 0x00, 0x0f, 0x0f };
-	Color c2 = { 0x0f, 0x0f, 0x00 };
-	Color c3 = { 0x00, 0x0f, 0x0f };
+	SegmentVal v0 = GetSegmentForInt(8);
+	SegmentVal v1 = GetSegmentForInt(8);
+	Color c0 = { 0x00, 0x00, 0x00 };
+	Color c1 = { 0x00, 0x00, 0x00 };
+	Color c2 = { 0x00, 0x00, 0x0f };
+	Color c3 = { 0x00, 0x00, 0x00 };
 	
 
 	for (;;)
 	{
 		SetDisplay(v0, c0, v1, c1);
 		HAL_Delay(1000);
-		SetDisplay(v0, c2, v1, c1);
-		HAL_Delay(1000);
-		SetDisplay(v0, c3, v1, c1);
-		HAL_Delay(1000);
+		//SetDisplay(v0, c2, v1, c1);
+		//HAL_Delay(1000);
+		//SetDisplay(v0, c3, v1, c1);
+		//HAL_Delay(1000);
 	}
 }

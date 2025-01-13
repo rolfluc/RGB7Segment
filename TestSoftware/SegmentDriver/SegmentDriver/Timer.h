@@ -2,4 +2,4 @@
 #include <stdint.h>
 
 void InitTimer();
-void SendTimerDMA(uint8_t* buffer, uint16_t count);
+void SendTimerDMA(uint32_t* buffer, uint16_t count);

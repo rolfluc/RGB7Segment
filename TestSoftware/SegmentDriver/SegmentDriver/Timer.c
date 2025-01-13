@@ -10,7 +10,7 @@ uint16_t maxLength = 0;
 
 void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
 {
-	HAL_TIM_PWM_Stop_DMA(htim, TIM_CHANNEL_1);
+	//HAL_TIM_PWM_Stop_DMA(htim, TIM_CHANNEL_1);
 }
 
 void DMA1_Channel1_IRQHandler(void)
@@ -24,11 +24,8 @@ static void MX_DMA_Init(void)
 	__HAL_RCC_DMAMUX1_CLK_ENABLE();
 	__HAL_RCC_DMA1_CLK_ENABLE();
 
-	/* DMA interrupt init */
-	/* DMA1_Channel1_IRQn interrupt configuration */
 	HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
 	HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
-	/* DMA1_Channel2_IRQn interrupt configuration */
 	HAL_NVIC_SetPriority(DMA1_Channel2_IRQn, 0, 0);
 	HAL_NVIC_EnableIRQ(DMA1_Channel2_IRQn);
 
@@ -39,9 +36,10 @@ static void InitGPIOs()
 	__GPIOA_CLK_ENABLE();
 	GPIO_InitTypeDef GPIO_InitStruct = { 0 };
 	GPIO_InitStruct.Pin = GPIO_PIN_8;
-	GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
 	GPIO_InitStruct.Pull = GPIO_NOPULL;
-	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+	GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
 	GPIO_InitStruct.Alternate = GPIO_AF6_TIM1;
 	HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 }
@@ -91,7 +89,7 @@ static void MX_Init(void)
 	sConfigOC.Pulse = 0;
 	sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
 	sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
-	sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+	sConfigOC.OCFastMode = TIM_OCFAST_ENABLE;
 	sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
 	sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
 	if (HAL_TIM_PWM_ConfigChannel(&htim, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
@@ -124,7 +122,7 @@ void InitTimer()
 	MX_Init();
 }
 
-void SendTimerDMA(uint8_t* buffer, uint16_t count)
+void SendTimerDMA(uint32_t* buffer, uint16_t count)
 {
-	HAL_TIM_PWM_Start_DMA(&htim, TIM_CHANNEL_1, (uint32_t*)buffer, count);
+	HAL_TIM_PWM_Start_DMA(&htim, TIM_CHANNEL_1, buffer, count);
 }
