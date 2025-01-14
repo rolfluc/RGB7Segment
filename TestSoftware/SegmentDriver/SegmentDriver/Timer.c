@@ -1,22 +1,22 @@
 #include "Timer.h"
 #include "stm32g4xx.h"
 #include "LEDTiming.h"
+#include "stdbool.h"
 
 TIM_HandleTypeDef htim;
-DMA_HandleTypeDef hdma_tim1_ch1;
-uint8_t* bufferTarget = 0;
-uint16_t currentTarget = 0;
-uint16_t maxLength = 0;
 
+#if 0
+DMA_HandleTypeDef hdma_tim1_ch1;
 void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
 {
-	//HAL_TIM_PWM_Stop_DMA(htim, TIM_CHANNEL_1);
+	HAL_TIM_PWM_Stop_DMA(htim, TIM_CHANNEL_1);
 }
 
 void DMA1_Channel1_IRQHandler(void)
 {
 	HAL_DMA_IRQHandler(&hdma_tim1_ch1);
 }
+
 
 static void MX_DMA_Init(void)
 {
@@ -30,28 +30,77 @@ static void MX_DMA_Init(void)
 	HAL_NVIC_EnableIRQ(DMA1_Channel2_IRQn);
 
 }
+#endif
 
+bool isBuffer0 = 0;
+uint8_t buffer0 = 0xAA;
+uint8_t buffer1 = 0xFF;
+uint8_t* bufferTarget = &buffer0;	
+
+static inline void SetFirst()
+{
+	GPIOA->BRR = GPIO_PIN_8;
+}
+
+static inline void SetBit(bool bit)
+{
+	if (bit)
+	{
+		GPIOA->BRR = GPIO_PIN_8;
+		GPIOA->BSRR = GPIO_PIN_8;
+		GPIOA->BRR = GPIO_PIN_8;
+		GPIOA->BSRR = GPIO_PIN_8;
+		GPIOA->BRR = GPIO_PIN_8;
+		GPIOA->BSRR = GPIO_PIN_8;
+		GPIOA->BRR = GPIO_PIN_8;
+		GPIOA->BSRR = GPIO_PIN_8;
+	}
+	else
+	{
+		GPIOA->BSRR = GPIO_PIN_8;
+	}
+}
+
+static inline void SetLast()
+{
+	GPIOA->BSRR = GPIO_PIN_8;
+}
+
+void TIM1_BRK_TIM15_IRQHandler(void)
+{
+	__HAL_TIM_CLEAR_FLAG(&htim, TIM_FLAG_UPDATE);
+	if (isBuffer0)
+	{
+		GPIOA->BRR = GPIO_PIN_8;
+	}
+	else
+	{
+		GPIOA->BSRR = GPIO_PIN_8;
+	}
+	isBuffer0 = !isBuffer0;
+}
+ 
 static void InitGPIOs()
 {
 	__GPIOA_CLK_ENABLE();
 	GPIO_InitTypeDef GPIO_InitStruct = { 0 };
 	GPIO_InitStruct.Pin = GPIO_PIN_8;
 	GPIO_InitStruct.Pull = GPIO_NOPULL;
-	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
 	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-	GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-	GPIO_InitStruct.Alternate = GPIO_AF6_TIM1;
 	HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+	//At current clock config (128mhz) can get ~30ns toggle times, if direct accessing GPIOA 
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
 }
 
 static void MX_Init(void)
 {
+	InitGPIOs();
+#if 0
 	__HAL_RCC_TIM1_CLK_ENABLE();
 	TIM_MasterConfigTypeDef sMasterConfig = { 0 };
 	TIM_OC_InitTypeDef sConfigOC = { 0 };
 	TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = { 0 };
-	
-	InitGPIOs();
 	hdma_tim1_ch1.Instance = DMA1_Channel1;
 	hdma_tim1_ch1.Init.Request = DMA_REQUEST_TIM1_CH1;
 	hdma_tim1_ch1.Init.Direction = DMA_MEMORY_TO_PERIPH;
@@ -66,6 +115,7 @@ static void MX_Init(void)
 		__ASM("BKPT 255");
 	}
 	__HAL_LINKDMA(&htim, hdma[TIM_DMA_ID_CC1], hdma_tim1_ch1);
+
 	
 	htim.Instance = TIM1;
 	htim.Init.Prescaler = 0;
@@ -113,12 +163,45 @@ static void MX_Init(void)
 	{
 		__ASM("BKPT 255");
 	}
+#endif
+	__HAL_RCC_TIM15_CLK_ENABLE();
+	TIM_ClockConfigTypeDef sClockSourceConfig = { 0 };
+	TIM_MasterConfigTypeDef sMasterConfig = { 0 };
+
+	htim.Instance = TIM15;
+	htim.Init.Prescaler = 0;
+	htim.Init.CounterMode = TIM_COUNTERMODE_UP;
+	htim.Init.Period = 50;
+	htim.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+	htim.Init.RepetitionCounter = 0;
+	htim.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+	if (HAL_TIM_Base_Init(&htim) != HAL_OK)
+	{
+		__ASM("BKPT 255");
+	}
+	sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+	if (HAL_TIM_ConfigClockSource(&htim, &sClockSourceConfig) != HAL_OK)
+	{
+		__ASM("BKPT 255");
+	}
+	sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+	sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+	if (HAL_TIMEx_MasterConfigSynchronization(&htim, &sMasterConfig) != HAL_OK)
+	{
+		__ASM("BKPT 255");
+	}
+	HAL_NVIC_SetPriority(TIM1_BRK_TIM15_IRQn, 0, 0);
+	HAL_NVIC_EnableIRQ(TIM1_BRK_TIM15_IRQn);
+	
+	HAL_TIM_Base_Start_IT(&htim);
 }
 
 
 void InitTimer()
 {
+#if 0 
 	MX_DMA_Init();
+#endif
 	MX_Init();
 }
 
