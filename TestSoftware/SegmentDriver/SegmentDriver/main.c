@@ -1,7 +1,7 @@
 #include <stm32g4xx_hal.h>
 #include <stm32_hal_legacy.h>
-//#include "SPI.h"
-#include "Timer.h"
+#include "SPI.h"
+//#include "Timer.h"
 #include "SegmentInterface.h"
 #include "LEDTiming.h"
 
@@ -32,8 +32,8 @@ void SystemClock_Config(void)
 	RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
 	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
 	RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-	RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV2;
-	RCC_OscInitStruct.PLL.PLLN = 41;
+	RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
+	RCC_OscInitStruct.PLL.PLLN = 13;
 	RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
 	RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
 	RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
@@ -51,7 +51,7 @@ void SystemClock_Config(void)
 	RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 	RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
+	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_3) != HAL_OK)
 	{
 		__ASM("BKPT 255");
 	}
@@ -62,7 +62,7 @@ int main(void)
 	HAL_Init();
 	SystemClock_Config();
 
-	InitTimer();
+	InitSPI();//InitTimer();
 	SegmentVal v0 = GetSegmentForInt(8);
 	SegmentVal v1 = GetSegmentForInt(8);
 	Color c0 = { 0x00, 0x00, 0x00 };
@@ -70,10 +70,11 @@ int main(void)
 	Color c2 = { 0x00, 0x00, 0x0f };
 	Color c3 = { 0x00, 0x00, 0x00 };
 	
-
+	uint8_t Sample[12] = { 0xEE, 0x88, 0xEE, 0x88, 0xEE, 0x88, 0xEE, 0x88, 0xEE, 0x88, 0xEE, 0x88 };
 	for (;;)
 	{
-		SetDisplay(v0, c0, v1, c1);
+		//SetDisplay(v0, c0, v1, c1);
+		SendDisplay((uint8_t*)&Sample, 4);
 		HAL_Delay(1000);
 		//SetDisplay(v0, c2, v1, c1);
 		//HAL_Delay(1000);

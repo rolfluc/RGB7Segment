@@ -684,6 +684,9 @@
     <ClInclude Include="$(BSP_ROOT)\STM32G4xxxx\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_wwdg.h">
       <Filter>Header files\Device-specific files\LL</Filter>
     </ClInclude>
+    <ClCompile Include="SPI.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddressableLED.h">
@@ -699,6 +702,9 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="LEDTiming.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="SPI.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

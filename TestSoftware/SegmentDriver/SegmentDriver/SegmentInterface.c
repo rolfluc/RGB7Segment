@@ -9,6 +9,7 @@
 #define BYTES_PER_SEGMENT 12
 
 // 7 Segment Data ordering is:
+// TODO this changed:
 // D1->E1->F1->A1->B1->G1->C1->E2->F2->A2->B2->C2->G2->D2
 
 typedef struct 
@@ -35,8 +36,10 @@ typedef struct
 
 typedef struct 
 {
+	uint32_t StartOfFrame;
 	Segment0 seg0;
 	Segment1 seg1;
+	uint32_t EndOfFrame;
 }Display;
 
 Display displayBuffer;
@@ -294,11 +297,8 @@ static inline void FillBuffer(SegmentVal v, Color col, PaddedColor* a, PaddedCol
 
 void SetDisplay(SegmentVal v0, Color c0, SegmentVal v1, Color c1)
 {
-	// Kind of gross way to do this. But hey. It works.
 	FillBuffer(v0, c0, &displayBuffer.seg0.A, &displayBuffer.seg0.B, &displayBuffer.seg0.C, &displayBuffer.seg0.D, &displayBuffer.seg0.E, &displayBuffer.seg0.F, &displayBuffer.seg0.G);
 	FillBuffer(v1, c1, &displayBuffer.seg1.A, &displayBuffer.seg1.B, &displayBuffer.seg1.C, &displayBuffer.seg1.D, &displayBuffer.seg1.E, &displayBuffer.seg1.F, &displayBuffer.seg1.G);
-	
-	//SendTimerDMA((uint32_t*)&displayBuffer, sizeof(Display) / sizeof(uint16_t));
 }
 
 SegmentVal GetSegmentForInt(uint8_t singleDecimal)

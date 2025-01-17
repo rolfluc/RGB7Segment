@@ -32,52 +32,70 @@ static void MX_DMA_Init(void)
 }
 #endif
 
+typedef enum
+{
+	State_High = 0,
+	State_Bit = 1,
+	State_Bit2 = 2,
+	State_Low = 3,
+}displayState;
+
 bool isBuffer0 = 0;
 uint8_t buffer0 = 0xAA;
 uint8_t buffer1 = 0xFF;
-uint8_t* bufferTarget = &buffer0;	
-
-static inline void SetFirst()
-{
-	GPIOA->BRR = GPIO_PIN_8;
-}
+uint8_t bufferIndex = 0;
+uint8_t bufferMask = 1; // start with bit position 0
+uint8_t* bufferTarget = &buffer0;
+displayState _DisplayState = State_High;
 
 static inline void SetBit(bool bit)
 {
 	if (bit)
 	{
 		GPIOA->BRR = GPIO_PIN_8;
-		GPIOA->BSRR = GPIO_PIN_8;
-		GPIOA->BRR = GPIO_PIN_8;
-		GPIOA->BSRR = GPIO_PIN_8;
-		GPIOA->BRR = GPIO_PIN_8;
-		GPIOA->BSRR = GPIO_PIN_8;
-		GPIOA->BRR = GPIO_PIN_8;
-		GPIOA->BSRR = GPIO_PIN_8;
 	}
 	else
 	{
 		GPIOA->BSRR = GPIO_PIN_8;
 	}
-}
-
-static inline void SetLast()
-{
-	GPIOA->BSRR = GPIO_PIN_8;
 }
 
 void TIM1_BRK_TIM15_IRQHandler(void)
 {
 	__HAL_TIM_CLEAR_FLAG(&htim, TIM_FLAG_UPDATE);
-	if (isBuffer0)
+	switch (_DisplayState)
 	{
-		GPIOA->BRR = GPIO_PIN_8;
+	case State_High:
+		{
+			_DisplayState = State_Bit;
+			GPIOA->BSRR = GPIO_PIN_8;
+			
+		}
+		break;
+	case State_Bit:
+		{
+			_DisplayState = State_Bit2;
+			if (!(*bufferTarget & bufferMask))
+			{
+				GPIOA->BRR = GPIO_PIN_8;
+			}
+		}
+		break;
+	case State_Bit2:
+		{
+			_DisplayState = State_Low;
+			bufferIndex = (bufferIndex + 1) % 8;
+			bufferMask = 1 << bufferIndex;
+			//Setup for the next bit here, as we have time
+		}
+		break;
+	case State_Low:
+		{
+			_DisplayState = State_High;
+			GPIOA->BRR = GPIO_PIN_8;
+		}
+		break;
 	}
-	else
-	{
-		GPIOA->BSRR = GPIO_PIN_8;
-	}
-	isBuffer0 = !isBuffer0;
 }
  
 static void InitGPIOs()
@@ -163,7 +181,7 @@ static void MX_Init(void)
 	{
 		__ASM("BKPT 255");
 	}
-#endif
+
 	__HAL_RCC_TIM15_CLK_ENABLE();
 	TIM_ClockConfigTypeDef sClockSourceConfig = { 0 };
 	TIM_MasterConfigTypeDef sMasterConfig = { 0 };
@@ -171,7 +189,7 @@ static void MX_Init(void)
 	htim.Instance = TIM15;
 	htim.Init.Prescaler = 0;
 	htim.Init.CounterMode = TIM_COUNTERMODE_UP;
-	htim.Init.Period = 50;
+	htim.Init.Period = 30;
 	htim.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
 	htim.Init.RepetitionCounter = 0;
 	htim.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
@@ -194,6 +212,7 @@ static void MX_Init(void)
 	HAL_NVIC_EnableIRQ(TIM1_BRK_TIM15_IRQn);
 	
 	HAL_TIM_Base_Start_IT(&htim);
+#endif
 }
 
 

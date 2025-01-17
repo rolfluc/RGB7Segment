@@ -145,7 +145,7 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "034f5cb2-47f6-4273-9974-f7da43f39400")
-		(at 225.365356 105.485356)
+		(at 225.365356 105.685356)
 		(property "Reference" "G1"
 			(at 1.634644 0.914644 0)
 			(unlocked yes)
@@ -485,7 +485,7 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "1feb7577-6ea4-4d48-831c-711d73654a05")
-		(at 230.165356 104)
+		(at 230.365356 104)
 		(property "Reference" "B1"
 			(at 1.634644 0.8 0)
 			(unlocked yes)
@@ -1335,7 +1335,7 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "81abf7ee-c5f9-4fe7-99c8-838c4c84dd64")
-		(at 230.165356 107.485356)
+		(at 230.365356 107.485356)
 		(property "Reference" "C1"
 			(at 1.634644 0.714644 0)
 			(unlocked yes)
@@ -1505,7 +1505,7 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "a8871774-a4ad-475b-bb28-f4e757276e1a")
-		(at 225.365356 101.085356)
+		(at 225.365356 101.485356)
 		(property "Reference" "A1"
 			(at 1.634644 0.914644 0)
 			(unlocked yes)
@@ -1675,7 +1675,7 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "aeef9fcf-ca4c-4769-b39b-26864ac93fa5")
-		(at 220.565356 107.485356)
+		(at 220.365356 107.485356)
 		(property "Reference" "E1"
 			(at 1.634644 0.714644 0)
 			(unlocked yes)
@@ -1845,7 +1845,7 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "b60445b6-9dd7-46a5-92d7-0411636ae9ca")
-		(at 220.565356 103.885356)
+		(at 220.365356 103.885356)
 		(property "Reference" "F1"
 			(at 1.634644 0.914644 0)
 			(unlocked yes)
@@ -2015,7 +2015,7 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "c4208664-77e4-40c8-8c35-4c0a6d60eb39")
-		(at 225.365356 110.285356)
+		(at 225.365356 109.885356)
 		(property "Reference" "D1"
 			(at 1.634644 0.914644 0)
 			(unlocked yes)
