@@ -167,6 +167,248 @@
 				)
 			)
 		)
+		(symbol "Connector:Conn_01x04_Pin"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x04_Pin"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x04, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x04_Pin_1_1"
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -303,52 +545,32 @@
 				)
 			)
 		)
-		(symbol "LED:WS2812B"
+		(symbol "GND_1"
+			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0.254)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 5.08 5.715 0)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right bottom)
-				)
-			)
-			(property "Value" "WS2812B"
-				(at 1.27 -5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-				(at 2.54 -9.525 0)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
-					(hide yes)
 				)
 			)
-			(property "Description" "RGB LED with integrated controller"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -357,7 +579,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RGB LED NeoPixel addressable"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -366,7 +588,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
 				(effects
 					(font
@@ -375,118 +597,34 @@
 					(hide yes)
 				)
 			)
-			(symbol "WS2812B_0_0"
-				(text "RGB"
-					(at 2.286 -4.191 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
-			(symbol "WS2812B_0_1"
-				(polyline
-					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "WS2812B_1_1"
+			(symbol "GND_1_1_1"
 				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
+					(at 0 0 270)
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -501,10 +639,185 @@
 						)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
+			)
+		)
+		(symbol "New_Library:Dialight_587"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.794 5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at -13.97 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -13.97 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at -13.97 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at -13.97 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Dialight_587_0_0"
+				(text "RGB"
+					(at 2.286 -5.461 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "Dialight_587_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -4.826) (xy 1.778 -4.826)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.81) (xy 1.778 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -4.826) (xy 2.667 -4.826)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -3.81) (xy 1.27 -4.826) (xy 1.27 -4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.794) (xy 1.27 -3.81) (xy 1.27 -3.302)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -2.286) (xy 3.683 -4.826) (xy 3.683 -5.334)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -2.794) (xy 2.667 -2.794) (xy 3.683 -4.826) (xy 4.699 -2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 3.81)
+					(end -5.08 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Dialight_587_1_1"
+				(pin input line
+					(at -7.62 1.27 0)
 					(length 2.54)
-					(name "DOUT"
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -1.27 0)
+					(length 2.54)
+					(name "CIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -520,9 +833,9 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -7.62 90)
+					(at 0 -8.89 90)
 					(length 2.54)
-					(name "VSS"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -537,10 +850,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 0 0)
+				(pin output line
+					(at 7.62 -1.27 180)
 					(length 2.54)
-					(name "DIN"
+					(name "CO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -548,6 +861,42 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 6.35 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 1.27 180)
+					(length 2.54)
+					(name "DO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -774,6 +1123,138 @@
 			)
 		)
 	)
+	(label "C1_CO"
+		(at 148.59 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05dbd270-70fc-489e-8efd-d206fe5258b6")
+	)
+	(label "COUT"
+		(at 26.67 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0653b475-3cb3-4eac-99fb-6e73361b4462")
+	)
+	(label "DOUT"
+		(at 26.67 33.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e5ee23f-e896-45ab-8551-a238229205a9")
+	)
+	(label "A2_DO"
+		(at 67.31 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a2b9bf9-7602-4a47-a0f6-c560f9a0fbc6")
+	)
+	(label "G1_CO"
+		(at 275.59 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1af9ed5c-4121-41a1-972b-c5f301a6be12")
+	)
+	(label "F1_CO"
+		(at 243.84 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f5bf5cd-f701-4d98-b73b-4d8815a9aad2")
+	)
+	(label "C2_CO"
+		(at 149.86 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "214b7ffb-eaba-4380-b619-acb2c3aa8beb")
+	)
+	(label "B2_CO"
+		(at 111.76 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ed4b127-2fb0-45ca-9693-353c9e564f02")
+	)
+	(label "B2_DO"
+		(at 111.76 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2eff489a-6ee1-4057-a585-ed432a25c222")
+	)
+	(label "G2_CO"
+		(at 276.86 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "306dafe9-6cbf-4d9f-906b-446c39d0af7c")
+	)
+	(label "C2_DO"
+		(at 149.86 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30da4aa2-8c8c-4de8-b843-a0ff30fa1c12")
+	)
+	(label "E1_CO"
+		(at 214.63 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "42664a5b-4968-4d23-9093-1e59a852c74b")
+	)
 	(label "DIN"
 		(at 26.67 38.1 0)
 		(fields_autoplaced yes)
@@ -785,8 +1266,8 @@
 		)
 		(uuid "4e132053-2cb5-47fc-b1f8-ec916f5e8038")
 	)
-	(label "DOUT"
-		(at 101.6 157.48 0)
+	(label "D2_CO"
+		(at 182.88 135.89 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -794,9 +1275,86 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "844acb25-fa87-4a02-9d4f-b5bc4663a3f7")
+		(uuid "51f19c46-c324-4dbf-9815-4a69809a1e97")
 	)
-	(label "DOUT"
+	(label "D1_DO"
+		(at 181.61 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e3ae6ca-26c5-443b-a64b-d5a61f477ade")
+	)
+	(label "F2_DO"
+		(at 245.11 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64cb4a05-15fc-400b-9a76-2cb667067940")
+	)
+	(label "F2_CO"
+		(at 245.11 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "69509263-c413-4cb4-9c3a-1cf777084a1d")
+	)
+	(label "D1_CO"
+		(at 181.61 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "845191fd-bb4a-44e7-9cf4-814a08df684f")
+	)
+	(label "B1_DO"
+		(at 110.49 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8af5af7c-61a3-43ac-aabb-dad95f492c88")
+	)
+	(label "F1_DO"
+		(at 243.84 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8da7bf2-3f3c-4a68-81b4-ca082c0c16eb")
+	)
+	(label "B1_CO"
+		(at 110.49 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab240072-a676-4813-99c8-fd82401a8c4a")
+	)
+	(label "CIN"
 		(at 26.67 35.56 0)
 		(fields_autoplaced yes)
 		(effects
@@ -807,96 +1365,129 @@
 		)
 		(uuid "b6b759ef-0334-4001-9c29-3320dc83dd6e")
 	)
-	(label "DIN"
-		(at 179.07 52.07 180)
+	(label "G2_DO"
+		(at 276.86 133.35 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "c72265df-40bd-4518-848c-648336ccd1cf")
+		(uuid "c31f5166-a7ed-4d64-81a8-ae6c0b00bc31")
 	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 186.69 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(label "A1_CO"
+		(at 66.04 92.71 0)
 		(fields_autoplaced yes)
-		(uuid "02ae624c-2216-452e-9500-a8002fb76374")
-		(property "Reference" "#PWR0117"
-			(at 186.69 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Value" "VCC"
-			(at 186.69 40.8742 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+		(uuid "cc9ee054-45d9-4c83-b2d3-1a4403495db2")
+	)
+	(label "E2_DO"
+		(at 215.9 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Footprint" ""
-			(at 186.69 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "d0ec2fb5-4cd2-4b16-80b7-5f114e1581c2")
+	)
+	(label "C1_DO"
+		(at 148.59 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Datasheet" ""
-			(at 186.69 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "e0b7e849-94bb-4fd0-80be-7931b1fdc998")
+	)
+	(label "G1_DO"
+		(at 275.59 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Description" ""
-			(at 186.69 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "e51ecba4-0a6f-4083-9d38-097100cd6b47")
+	)
+	(label "E2_CO"
+		(at 215.9 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(pin "1"
-			(uuid "75dcc11e-93e0-4075-b7b3-a5305e423497")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0117")
-					(unit 1)
-				)
+		(uuid "ead54b2e-81ca-47d2-83af-6b22970426c0")
+	)
+	(label "D2_DO"
+		(at 182.88 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
+		(uuid "ecc8b1fc-584c-4c2c-aebe-09dc8c8e652a")
+	)
+	(label "A1_DO"
+		(at 66.04 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed68be21-eb5d-4091-8507-924895bd0f07")
+	)
+	(label "A2_CO"
+		(at 67.31 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "edaef145-7230-4397-aee1-ac9aa0737c9c")
+	)
+	(label "E1_DO"
+		(at 214.63 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f6c89443-ae8d-4079-afde-b58994fe50ea")
 	)
 	(symbol
+		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 180.594 87.376 0)
-		(mirror y)
+		(at 104.14 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "076611db-bc49-4ea6-872c-703c740dd9b1")
-		(property "Reference" "#PWR0114"
-			(at 180.594 93.726 0)
+		(uuid "05dda6da-90a5-4fdd-978c-0379afcbd7fc")
+		(property "Reference" "#PWR028"
+			(at 104.14 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -905,7 +1496,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.594 91.8194 0)
+			(at 104.14 147.6431 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -913,7 +1504,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.594 87.376 0)
+			(at 104.14 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -922,7 +1513,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.594 87.376 0)
+			(at 104.14 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -930,74 +1521,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 180.594 87.376 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c15273b1-d788-4774-adba-5d56c4083ca3")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0114")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 186.69 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0b576e54-4598-4610-90ed-f20fef1749b3")
-		(property "Reference" "C1"
-			(at 196.9959 48.6116 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812-E"
-			(at 198.882 58.166 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 187.96 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.23 61.595 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 186.69 52.07 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1006,171 +1531,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "390984ce-e831-4458-b7ab-8f9f07d32797")
-		)
-		(pin "2"
-			(uuid "639e6731-8410-4935-9c4c-7f57f513955d")
-		)
-		(pin "3"
-			(uuid "312fd941-6800-49ac-9fb3-caa9ffa7e420")
-		)
-		(pin "4"
-			(uuid "69150d3d-2faf-4292-89b5-19259519e7a4")
+			(uuid "fb34dc02-7e90-46b3-83db-fada6aa5f801")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 73.914 125.222 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0cdb4d67-41f4-48ea-b288-8eb8dfb83942")
-		(property "Reference" "A2"
-			(at 84.2199 121.7636 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812-E"
-			(at 86.106 131.318 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 75.184 132.842 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.454 134.747 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 73.914 125.222 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "806676d3-e8a4-4e9f-8008-655d38be1f08")
-		)
-		(pin "2"
-			(uuid "295015f7-c981-49e1-ad41-221718772585")
-		)
-		(pin "3"
-			(uuid "f4a82daf-5556-4fd9-a4a9-637dc977661d")
-		)
-		(pin "4"
-			(uuid "4d4d5d4d-8d30-42e3-830b-31c3b2e6c61d")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "A2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 157.226 53.848 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0f221366-99c9-4268-8fe4-5e23100e3785")
-		(property "Reference" "B1"
-			(at 167.5319 50.3896 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812-E"
-			(at 169.418 59.944 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 158.496 61.468 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 159.766 63.373 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 157.226 53.848 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bf5d64e1-a919-4191-afc0-49a27f1f84c8")
-		)
-		(pin "2"
-			(uuid "9d5c884e-23b9-4091-93ed-093f696341a0")
-		)
-		(pin "3"
-			(uuid "e0177817-65e7-475a-82c3-29827c56ee48")
-		)
-		(pin "4"
-			(uuid "a1824f4d-780d-475c-aa9f-dec8109ee54b")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "B1")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -1178,16 +1544,16 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 73.914 117.602 0)
+		(at 187.706 46.736 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "160be67a-3905-4c77-b0dd-93edcf309c97")
-		(property "Reference" "#PWR0132"
-			(at 73.914 121.412 0)
+		(uuid "0aa6f780-38f3-44e7-bac5-494aa406f4f7")
+		(property "Reference" "#PWR017"
+			(at 187.706 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1196,7 +1562,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 73.914 114.0262 0)
+			(at 187.706 43.1602 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1204,7 +1570,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.914 117.602 0)
+			(at 187.706 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1213,7 +1579,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.914 117.602 0)
+			(at 187.706 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1222,7 +1588,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 73.914 117.602 0)
+			(at 187.706 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1231,12 +1597,380 @@
 			)
 		)
 		(pin "1"
-			(uuid "aaccfe76-afd0-48ec-b325-2d4a489ed9d6")
+			(uuid "1502ecfd-788b-413f-a378-4d7db3647753")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0132")
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 142.24 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b386a08-40de-43f7-8d1d-d8dffc26d23e")
+		(property "Reference" "#PWR029"
+			(at 142.24 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 147.6431 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 142.24 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dfbdf828-93d4-449f-a1b5-64accb41ace7")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 198.12 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0eabe405-b72e-4190-9b11-8664160b1702")
+		(property "Reference" "C13"
+			(at 201.041 33.0778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 201.041 35.5021 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 199.0852 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df76b4c6-78b1-4d5b-911d-51657ad3b02c")
+		)
+		(pin "2"
+			(uuid "d7e72bc3-96c4-4eb3-bc99-c62cdd851a63")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library:Dialight_587")
+		(at 142.24 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1010534d-87b7-4df6-b5b1-2581e6230a01")
+		(property "Reference" "C2"
+			(at 144.4341 128.1515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 144.4341 129.8329 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 128.27 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 128.27 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "978162ed-f182-45a0-a3e4-fd95c38f205a")
+		)
+		(pin "1"
+			(uuid "09a2d3f8-4f77-4859-87a7-73f394d91873")
+		)
+		(pin "2"
+			(uuid "cad991e0-33be-4771-8bd7-377e4ded4dff")
+		)
+		(pin "4"
+			(uuid "35a1395c-13d5-436e-b8b1-b5128c31d74e")
+		)
+		(pin "5"
+			(uuid "89325cfd-b061-412a-baee-5c2290f3847e")
+		)
+		(pin "3"
+			(uuid "fefa3608-2514-4bc1-9f7e-d1af389fc5dc")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library:Dialight_587")
+		(at 58.42 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1181e8fb-8db4-490d-b126-76460502dae5")
+		(property "Reference" "A1"
+			(at 60.706 86.106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 60.6141 86.6529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 44.45 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "ec28dbcd-c591-4e7a-976a-94e77e786ede")
+		)
+		(pin "1"
+			(uuid "cf5f3613-e6c2-43bd-b141-caed32b49ee3")
+		)
+		(pin "2"
+			(uuid "61ac8578-e996-4309-a99d-ea47e07707ac")
+		)
+		(pin "4"
+			(uuid "16cdf85d-9e6b-498e-85e0-ca449d33ec83")
+		)
+		(pin "5"
+			(uuid "2faa811b-955f-40a0-bc62-5171814ce856")
+		)
+		(pin "3"
+			(uuid "f670bb0f-7e5b-43c5-bb97-0a463db6b0bc")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.706 54.356 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "118e3199-b623-405e-9053-4e0874ae9645")
+		(property "Reference" "#PWR018"
+			(at 187.706 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.706 58.7994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.706 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.706 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.706 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3557efaf-9f19-42e1-bb82-b5913df77995")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -1267,7 +2001,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical_SMD_Pin1Left"
 			(at 22.86 57.15 0)
 			(effects
 				(font
@@ -1304,6 +2038,223 @@
 			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 227.33 38.1 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16a1e982-8adc-4a2f-be0d-249ce71c539c")
+		(property "Reference" "#PWR012"
+			(at 227.33 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 227.33 42.5434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab404538-dadf-4bb3-800a-28ba8d7b4f97")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 142.24 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18c6c485-748c-4d5c-8e7d-9711236260c2")
+		(property "Reference" "#PWR050"
+			(at 142.24 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 143.637 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38fb3c14-de85-42f5-88c4-2b3c3bb02582")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library:Dialight_587")
+		(at 208.28 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c49ec06-2fed-46d0-babb-7ed14a049b4e")
+		(property "Reference" "E2"
+			(at 210.4741 128.1515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 210.4741 129.8329 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 194.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "5c780325-0381-4508-ab89-a12810e437b4")
+		)
+		(pin "1"
+			(uuid "f3fca050-a715-4270-b808-3f253d55bc03")
+		)
+		(pin "2"
+			(uuid "f7ead6cc-d4d8-430f-b82e-7bb5229ffb90")
+		)
+		(pin "4"
+			(uuid "140a53c3-c609-4458-a3fb-119ba6212a02")
+		)
+		(pin "5"
+			(uuid "eb46310a-0a6a-4c50-a15c-71507aa5925f")
+		)
+		(pin "3"
+			(uuid "e7719845-a148-49d9-9009-7183cc7b0088")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "E2")
 					(unit 1)
 				)
 			)
@@ -1377,16 +2328,16 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 100.584 118.11 0)
+		(at 168.91 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "28e417f4-26bf-44b5-afe1-51fd9a4f6171")
-		(property "Reference" "#PWR0146"
-			(at 100.584 121.92 0)
+		(uuid "261b0118-95be-4344-96a9-bfa144b31537")
+		(property "Reference" "#PWR013"
+			(at 168.91 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1395,7 +2346,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 100.584 114.5342 0)
+			(at 168.91 43.4142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1403,7 +2354,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.584 118.11 0)
+			(at 168.91 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1412,7 +2363,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.584 118.11 0)
+			(at 168.91 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1421,7 +2372,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 100.584 118.11 0)
+			(at 168.91 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1430,537 +2381,30 @@
 			)
 		)
 		(pin "1"
-			(uuid "ab1f135a-216d-4e6c-aa73-c29931736219")
+			(uuid "090a3951-6dbe-4b6e-9ae4-7f80aced08bd")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0146")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 123.698 125.476 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "29674630-f3d3-4e8b-9805-935ba7d20f57")
-		(property "Reference" "C5"
-			(at 134.0039 122.0176 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812-E"
-			(at 135.89 131.572 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 124.968 133.096 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 126.238 135.001 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 123.698 125.476 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3738d580-664a-4fe1-b569-46278d59f3a1")
-		)
-		(pin "2"
-			(uuid "2eeba312-d78e-492c-a963-3ba285845c7c")
-		)
-		(pin "3"
-			(uuid "9bf421a0-6c5c-4e29-bd86-d9f78d735c0d")
-		)
-		(pin "4"
-			(uuid "45459c00-5ebc-4986-8129-862670d7a9c4")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 203.2 79.756 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2a6e50c1-c0ed-42db-a2ab-25919802f2d7")
-		(property "Reference" "G1"
-			(at 213.5059 76.2976 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812-E"
-			(at 215.392 85.852 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 204.47 87.376 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 89.281 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 203.2 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "96ab0198-ef56-4755-b4ea-efa8bf3cc519")
-		)
-		(pin "2"
-			(uuid "f8f7dba4-4dda-4d30-8cfe-2afa3da5de84")
-		)
-		(pin "3"
-			(uuid "385fb4d5-1db4-4f61-ab06-f313921d6665")
-		)
-		(pin "4"
-			(uuid "fc29491c-8229-4f06-b79e-e4d6ee355cfa")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "G1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 100.584 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "318dac05-5174-4777-9cc0-35dcaffd9299")
-		(property "Reference" "B2"
-			(at 110.8899 122.2716 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812-E"
-			(at 112.776 131.826 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 101.854 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 103.124 135.255 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 100.584 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e8ada18b-779d-4854-b7e3-b8b1705683b4")
-		)
-		(pin "2"
-			(uuid "6cf1fd91-1196-4e39-9bcb-aa8bac19bc31")
-		)
-		(pin "3"
-			(uuid "74e63033-e965-46d2-85ec-e3315b440aa6")
-		)
-		(pin "4"
-			(uuid "2971b1f0-8ec5-4c54-8baa-97516e3c529f")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "B2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 130.556 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33a32651-a10c-45d0-8298-a72273cc9ef9")
-		(property "Reference" "#PWR0130"
-			(at 130.556 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 130.556 42.1442 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.556 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.556 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.556 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c053aa5e-74aa-48f4-aaa3-d580141d98c0")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0130")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 67.564 156.718 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "388e50c7-9a59-478a-9ccf-ebd88218753f")
-		(property "Reference" "D2"
-			(at 77.8699 153.2596 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812-E"
-			(at 79.756 162.814 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 68.834 164.338 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 70.104 166.243 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 67.564 156.718 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ef3da92f-d60d-4452-84a0-54b1e9aa0940")
-		)
-		(pin "2"
-			(uuid "8166a5e9-9d4a-4cdb-8ec3-aa394105cd2a")
-		)
-		(pin "3"
-			(uuid "9f125e5d-9c04-43de-a691-8d10eca12d7b")
-		)
-		(pin "4"
-			(uuid "d4dd644e-195d-4aaf-a27f-808c179ac3ad")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 140.208 156.718 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3d510844-3c65-49a4-a210-b2dec1a7cada")
-		(property "Reference" "G2"
-			(at 150.5139 153.2596 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812-E"
-			(at 152.4 162.814 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 141.478 164.338 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.748 166.243 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 140.208 156.718 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ff4f9d6-4fe6-4995-8c9a-9aaf7cd8ff11")
-		)
-		(pin "2"
-			(uuid "2b7f8023-e783-480e-b172-3963268b7042")
-		)
-		(pin "3"
-			(uuid "142baa15-42af-49c8-9acf-a75c386e78fc")
-		)
-		(pin "4"
-			(uuid "6e3808a5-2c77-4a5c-988d-8332f0f198d5")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "G2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 105.41 181.356 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40058d97-c145-4a83-bd13-4b4a3204e58a")
-		(property "Reference" "#PWR0152"
-			(at 105.41 185.166 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 105.41 177.7802 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 181.356 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 181.356 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 105.41 181.356 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "47fc6f35-b2f6-4ab3-b1a8-3326dee2d3ee")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0152")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 93.98 165.1 0)
-		(mirror y)
+		(at 237.49 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4050dbe3-0c52-48e6-8e27-8f630715ae9d")
-		(property "Reference" "#PWR0137"
-			(at 93.98 171.45 0)
+		(uuid "288d6a0e-08af-44c4-91ca-771375b777a3")
+		(property "Reference" "#PWR032"
+			(at 237.49 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1969,7 +2413,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 169.5434 0)
+			(at 237.49 147.6431 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1977,7 +2421,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 165.1 0)
+			(at 237.49 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1986,7 +2430,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 165.1 0)
+			(at 237.49 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1994,8 +2438,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 93.98 165.1 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 237.49 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2004,12 +2448,570 @@
 			)
 		)
 		(pin "1"
-			(uuid "902476eb-08a9-47a7-8338-83430888d566")
+			(uuid "91865541-c2ea-4257-9ab1-83129f95c7a5")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0137")
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 197.866 46.736 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29225eaf-526e-439b-a130-9b84582eb2c7")
+		(property "Reference" "#PWR019"
+			(at 197.866 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 197.866 43.1602 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 197.866 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 197.866 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 197.866 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "719079a0-dab5-4597-a5e5-9c6664c958fd")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 38.1 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c48ffbd-5017-4d7b-88db-d4ab74f532a7")
+		(property "Reference" "#PWR04"
+			(at 187.96 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 42.5434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4060d14-f5bc-46d0-8c53-9e69046c12f0")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.186 54.356 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ecedda8-ce8c-4e30-8bce-733334a0653c")
+		(property "Reference" "#PWR024"
+			(at 218.186 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.186 58.7994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.186 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.186 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.186 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87aefacf-73a2-4607-a12e-7c78569cb4f2")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 178.816 50.546 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ed089a4-893c-4199-94e9-ccf75a77b259")
+		(property "Reference" "C18"
+			(at 181.737 49.3338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 181.737 51.7581 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 179.7812 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 178.816 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 178.816 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db108e4c-fbf2-45b8-aeb1-c3f8156942b0")
+		)
+		(pin "2"
+			(uuid "4ed7e27c-46db-49e3-8607-c13066a4e98e")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 140.97 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34cbfd77-fd52-4c45-a15d-fc1aa16fd6c3")
+		(property "Reference" "#PWR043"
+			(at 140.97 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 142.367 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 140.97 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97af5696-d957-414a-b829-506bfc12923a")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 208.026 50.546 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3682f71f-7795-46b4-a5ac-2dc4401ca4b4")
+		(property "Reference" "C21"
+			(at 210.947 49.3338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 210.947 51.7581 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 208.9912 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.026 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 208.026 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b35d2577-d955-40ac-9229-d0fed2da75ba")
+		)
+		(pin "2"
+			(uuid "bd390bf1-b8ca-42c3-8dcd-8f8198cdb6f7")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library:Dialight_587")
+		(at 207.01 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39fa6ef0-3982-439c-b6fc-0b5bc9d0479d")
+		(property "Reference" "E1"
+			(at 209.2041 84.9715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 209.2041 86.6529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 193.04 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "3b72da79-8e2c-4c3c-89ab-37e28db7cba8")
+		)
+		(pin "1"
+			(uuid "02ec0aab-c6ae-48b5-a233-29b8c9ba581e")
+		)
+		(pin "2"
+			(uuid "c9fc9a88-7915-4677-a0c5-c967db198ffa")
+		)
+		(pin "4"
+			(uuid "f4ce944e-58af-4502-9cd2-843bbb3029a3")
+		)
+		(pin "5"
+			(uuid "51a8af95-e3a3-4d24-8078-bbd7eac9bc68")
+		)
+		(pin "3"
+			(uuid "228e109a-8512-4856-baf5-0378e8fdbefe")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "E1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 173.99 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d4cd86c-6f5b-4e11-b7a5-717fcc2c7489")
+		(property "Reference" "#PWR037"
+			(at 173.99 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 173.99 104.4631 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 173.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c773e2f4-a56c-4147-b205-e31651da9e77")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -2025,8 +3027,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4755476b-c047-4581-bba8-b533c4d4e56f")
-		(property "Reference" "C4"
-			(at 172.085 33.7093 0)
+		(property "Reference" "C10"
+			(at 172.085 33.3318 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2035,7 +3037,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 172.085 36.2462 0)
+			(at 172.085 35.7561 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2079,7 +3081,74 @@
 		(instances
 			(project ""
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "C4")
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 173.99 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d6ce49a-a000-49af-9e25-d9ca2d876818")
+		(property "Reference" "#PWR044"
+			(at 173.99 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 175.387 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc3aae95-eedc-46bd-9fea-016c40a9f171")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -2087,7 +3156,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.556 87.376 0)
+		(at 208.026 54.356 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2095,9 +3164,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4ac93e82-4692-490e-8ba3-c6ec76fe0eed")
-		(property "Reference" "#PWR0112"
-			(at 130.556 93.726 0)
+		(uuid "4d7f5fe6-affb-4b21-a2d8-acad51e5cdf6")
+		(property "Reference" "#PWR022"
+			(at 208.026 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2106,15 +3175,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.556 91.8194 0)
+			(at 208.026 58.7994 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 130.556 87.376 0)
+			(at 208.026 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2123,7 +3193,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.556 87.376 0)
+			(at 208.026 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2132,7 +3202,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.556 87.376 0)
+			(at 208.026 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2141,12 +3211,212 @@
 			)
 		)
 		(pin "1"
-			(uuid "e520aa9f-eae0-4438-bcf3-3016dd42481c")
+			(uuid "92f36cbe-f08e-4382-baba-a817ccdcaa5f")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0112")
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 102.87 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d9377f4-5d91-41d9-b81c-5bcd96f44fb5")
+		(property "Reference" "#PWR042"
+			(at 102.87 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 104.267 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "746405fc-219e-45c8-bdf2-93b50c2b457d")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 207.01 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4de512f6-62cc-4f1d-af6d-16b2228dff12")
+		(property "Reference" "#PWR045"
+			(at 207.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 208.407 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a4fe2830-268b-4284-902c-9fc89f1603f0")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 198.12 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f010050-4ce8-42cd-a42a-71c6386dfdbf")
+		(property "Reference" "#PWR05"
+			(at 198.12 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 198.12 26.9042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c136c7a2-8568-4b84-896b-29b92c614337")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2154,7 +3424,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 140.208 164.338 0)
+		(at 168.91 54.61 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2162,9 +3432,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4fc554a7-1a9f-45b1-ad3f-5f90decd0ecb")
-		(property "Reference" "#PWR0147"
-			(at 140.208 170.688 0)
+		(uuid "512062a8-09be-4202-aa00-180e2ab69239")
+		(property "Reference" "#PWR014"
+			(at 168.91 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2173,7 +3443,142 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.208 168.7814 0)
+			(at 168.91 59.0534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d119ee8-a6e3-4c73-afe3-049c97a60d8d")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 58.42 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5309f036-069e-4665-b484-b200597a615a")
+		(property "Reference" "#PWR041"
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 59.817 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca869541-d996-490f-aa3c-314b0089007d")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 269.24 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "541ea552-61c9-4f00-8a94-88a575c1131d")
+		(property "Reference" "#PWR033"
+			(at 269.24 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 269.24 147.6431 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2181,7 +3586,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.208 164.338 0)
+			(at 269.24 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2190,7 +3595,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.208 164.338 0)
+			(at 269.24 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2198,8 +3603,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 140.208 164.338 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 269.24 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2208,64 +3613,65 @@
 			)
 		)
 		(pin "1"
-			(uuid "e89114ac-bd25-42c1-a7f8-2f1ac2d1fde4")
+			(uuid "79055c97-69cc-4b6b-979a-ded76a6a5fce")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0147")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 180.594 79.756 0)
+		(lib_id "power:VCC")
+		(at 236.22 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "54b16a55-015c-4934-a7c0-83a8c73a6e52")
-		(property "Reference" "F1"
-			(at 190.8999 76.2976 0)
+		(fields_autoplaced yes)
+		(uuid "56bbe545-d5d5-431c-96ba-87efc112b0dc")
+		(property "Reference" "#PWR046"
+			(at 236.22 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "SK6812-E"
-			(at 192.786 85.852 0)
+		(property "Value" "VCC"
+			(at 237.617 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 181.864 87.376 0)
+		(property "Footprint" ""
+			(at 236.22 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 183.134 89.281 0)
+			(at 236.22 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 180.594 79.756 0)
+			(at 236.22 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2274,73 +3680,65 @@
 			)
 		)
 		(pin "1"
-			(uuid "c835f249-e9c9-41b0-b3b4-3949294740e4")
-		)
-		(pin "2"
-			(uuid "18e46b6f-a8fe-450b-a455-957cfec7a5e6")
-		)
-		(pin "3"
-			(uuid "52bca241-fb2e-40ef-a62d-9ad895a6431e")
-		)
-		(pin "4"
-			(uuid "2a777ebb-f32c-4db3-81ca-dd5a41e163a2")
+			(uuid "a955efd7-2df9-43bc-b0bf-c5905123d091")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "F1")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 93.98 157.48 0)
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 207.01 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5b8afcda-4223-412a-ab3f-f2b6c6201ae7")
-		(property "Reference" "E2"
-			(at 104.2859 154.0216 0)
+		(fields_autoplaced yes)
+		(uuid "59540ce4-e7b1-4554-819b-42e51f868d2a")
+		(property "Reference" "#PWR038"
+			(at 207.01 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 207.01 104.4631 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812-E"
-			(at 106.172 163.576 0)
+		(property "Footprint" ""
+			(at 207.01 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 95.25 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 167.005 0)
+			(at 207.01 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 93.98 157.48 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 207.01 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2349,21 +3747,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "4dfb3477-8edb-4012-addf-7071fa07de87")
-		)
-		(pin "2"
-			(uuid "e2883dcf-66eb-47a6-b086-fe502b13cf21")
-		)
-		(pin "3"
-			(uuid "6af7ad61-a2d7-4903-a152-f7fe91aef4e8")
-		)
-		(pin "4"
-			(uuid "29fd9055-8fc2-4be0-aa20-078d9f331c27")
+			(uuid "b57b851f-32ae-443d-93c9-bc09b02f3111")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "E2")
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 227.076 46.736 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b6176d1-b017-4ac4-b657-cafa96cbb748")
+		(property "Reference" "#PWR025"
+			(at 227.076 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 227.076 43.1602 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.076 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.076 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 227.076 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca37e4b2-ee20-4574-8ccc-d0c488d464d0")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -2436,84 +3891,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 35.56 59.69 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ede55f2-e16b-4327-8ec3-42ef4e18bc1a")
-		(property "Reference" "#PWR0101"
-			(at 35.56 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 35.56 64.1334 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 35.56 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fe0172f6-de30-4c90-9181-c2a6dadba4d9")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
-		(at 203.2 72.136 0)
+		(at 208.28 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5fec23c7-4dc6-4201-ba7a-c95e1900fe92")
-		(property "Reference" "#PWR0102"
-			(at 203.2 75.946 0)
+		(uuid "5f0d31f1-2c58-437e-912d-8909cd0e7646")
+		(property "Reference" "#PWR07"
+			(at 208.28 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2522,7 +3910,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 203.2 68.5602 0)
+			(at 208.28 26.9042 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2530,7 +3918,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 72.136 0)
+			(at 208.28 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2539,7 +3927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 72.136 0)
+			(at 208.28 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2548,7 +3936,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 203.2 72.136 0)
+			(at 208.28 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2557,12 +3945,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b20e073d-150a-40de-9b25-ea6b53b28802")
+			(uuid "a0890470-657b-4a0d-949b-da9b5983e886")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0102")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -2570,16 +3958,16 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 180.594 72.136 0)
+		(at 208.026 46.736 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "60b026f8-8947-4025-94ae-ac91d838ca1f")
-		(property "Reference" "#PWR0116"
-			(at 180.594 75.946 0)
+		(uuid "698a711d-fce5-422e-9dd3-747de6b0ce8b")
+		(property "Reference" "#PWR021"
+			(at 208.026 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2588,7 +3976,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 180.594 68.5602 0)
+			(at 208.026 43.1602 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2596,7 +3984,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.594 72.136 0)
+			(at 208.026 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2605,7 +3993,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.594 72.136 0)
+			(at 208.026 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2614,7 +4002,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.594 72.136 0)
+			(at 208.026 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2623,44 +4011,114 @@
 			)
 		)
 		(pin "1"
-			(uuid "4ba7cf5e-b22c-4787-a1e8-7b435c3b172f")
+			(uuid "93d21d4d-cefb-49cc-a6e2-f6fc7971f831")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0116")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 21.59 38.1 180)
+		(lib_id "power:VCC")
+		(at 269.24 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "710b32f0-7a7c-435c-ad95-2815f99fa80b")
-		(property "Reference" "J2"
-			(at 22.225 30.9583 0)
+		(fields_autoplaced yes)
+		(uuid "69ddc1bd-6d79-47c7-bb4e-ef4ecf603f58")
+		(property "Reference" "#PWR054"
+			(at 269.24 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 19.812 35.56 90)
+		(property "Value" "VCC"
+			(at 270.637 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 21.59 38.1 0)
+		(property "Footprint" ""
+			(at 269.24 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 269.24 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 269.24 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6012b9a7-5cfa-4841-82f2-3f42035cf444")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 227.33 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76282986-e6b9-42e9-ae0c-8d318a7d71d0")
+		(property "Reference" "C16"
+			(at 230.251 33.0778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 230.251 35.5021 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 228.2952 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2669,7 +4127,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 21.59 38.1 0)
+			(at 227.33 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2677,8 +4135,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 21.59 38.1 0)
+		(property "Description" ""
+			(at 227.33 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2687,10 +4145,150 @@
 			)
 		)
 		(pin "1"
-			(uuid "3a511df1-fd6c-4aa8-a45e-d94bb30436f4")
+			(uuid "d53f25be-38c5-4757-a538-ba98b9113c8d")
 		)
 		(pin "2"
-			(uuid "23d2ad37-4a78-433a-83ea-3771c624eafc")
+			(uuid "4acedf37-6a43-4968-b30b-e3577aee1c45")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 58.42 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "775eb51e-28b8-44e8-8de6-3eda0e666ae8")
+		(property "Reference" "#PWR034"
+			(at 58.42 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 58.42 104.4631 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 58.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "587476ba-f642-4ec3-bd08-8a85ad55d456")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 21.59 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c77fc91-2ae6-41ea-b505-ed8a9d87925a")
+		(property "Reference" "J2"
+			(at 22.86 28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04_Pin"
+			(at 20.32 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical_SMD_Pin1Left"
+			(at 21.59 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 21.59 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0eec6ed5-6046-4e3a-b88d-dd09116d8131")
+		)
+		(pin "1"
+			(uuid "d45f8417-5f7e-4feb-ac69-37ce7cb0778a")
+		)
+		(pin "3"
+			(uuid "29916e2a-53d9-4f74-ac4c-9e1bb32f60fa")
+		)
+		(pin "4"
+			(uuid "b3022d05-ba43-4433-a041-2d7c0041db96")
 		)
 		(instances
 			(project ""
@@ -2702,92 +4300,17 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 130.556 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "73ff21f7-ead9-4278-8c60-e7867b1d10e3")
-		(property "Reference" "A1"
-			(at 140.8619 49.8816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812-E"
-			(at 142.748 59.436 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 131.826 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.096 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.556 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4fe8dc0f-fff8-474b-b2fc-f7154bea8413")
-		)
-		(pin "2"
-			(uuid "9f76989d-f78a-4c02-9c47-51c2b39d180a")
-		)
-		(pin "3"
-			(uuid "91aed432-a4f1-4985-b305-ad29088f7e16")
-		)
-		(pin "4"
-			(uuid "6af2f301-f093-4dcb-8487-b8049a0942e2")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "A1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
-		(at 82.55 92.71 0)
+		(at 267.97 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7695622a-8a05-4159-ae8a-7a34c817c58b")
-		(property "Reference" "#PWR0133"
-			(at 82.55 96.52 0)
+		(uuid "86b0f379-e6a2-414d-8a8c-19574cacc539")
+		(property "Reference" "#PWR047"
+			(at 267.97 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2796,15 +4319,16 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 82.55 89.1342 0)
+			(at 269.367 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 92.71 0)
+			(at 267.97 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2813,7 +4337,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 92.71 0)
+			(at 267.97 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2822,7 +4346,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 82.55 92.71 0)
+			(at 267.97 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2831,12 +4355,347 @@
 			)
 		)
 		(pin "1"
-			(uuid "d289d0d1-cdfd-4294-b13c-71c4c6597ad4")
+			(uuid "767e3368-e73d-4d04-9a9f-898c57f37988")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 59.69 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88e66bc8-8930-4cf3-88b0-4338580959cd")
+		(property "Reference" "#PWR027"
+			(at 59.69 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 59.69 147.6431 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 59.69 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1eae2122-b899-4c6d-95b2-27ae52030234")
 		)
 		(instances
 			(project ""
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0133")
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 198.12 38.1 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88e8333a-a5c5-48d5-81e8-19056db5ba68")
+		(property "Reference" "#PWR06"
+			(at 198.12 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.12 42.5434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ab17b2e-9e6b-49b1-890f-22264be25a8f")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 267.97 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ceb46a8-bfb4-4ff0-8db0-50c548ff5251")
+		(property "Reference" "#PWR040"
+			(at 267.97 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 267.97 104.4631 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 267.97 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28cc2dec-e7a6-4b3c-9171-55ade680d870")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 218.186 46.736 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "941fead8-fac1-418d-8724-f5fb3d45db4f")
+		(property "Reference" "#PWR023"
+			(at 218.186 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 218.186 43.1602 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.186 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.186 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.186 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29beedde-59c2-4f76-acc6-8df7841fb29e")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 237.49 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "95742d27-4bc2-41e4-84ab-4cfc72917ae3")
+		(property "Reference" "#PWR053"
+			(at 237.49 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 238.887 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed870e7d-cda8-4f55-8023-d7bd1a51b222")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -2844,16 +4703,16 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 82.55 96.52 0)
+		(at 187.96 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "77052348-359f-4fdc-b8bf-3b79f66d2277")
-		(property "Reference" "C8"
-			(at 85.471 95.6853 0)
+		(uuid "95d78a77-617d-4ba4-bde2-59f5d21e7b27")
+		(property "Reference" "C12"
+			(at 190.881 33.0778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2862,7 +4721,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 85.471 98.2222 0)
+			(at 190.881 35.5021 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2871,7 +4730,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 83.5152 100.33 0)
+			(at 188.9252 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2880,7 +4739,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 96.52 0)
+			(at 187.96 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2889,7 +4748,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 82.55 96.52 0)
+			(at 187.96 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2898,15 +4757,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ccdc35b-6370-4c97-824c-7ac927bcc38e")
+			(uuid "2b4f4396-de68-4bc3-880f-7d400fda4675")
 		)
 		(pin "2"
-			(uuid "71301b12-3478-4b17-8b2c-36f5b17f8f62")
+			(uuid "eb4caed9-9def-43f0-ab24-7d74069757cc")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "C8")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -2914,16 +4773,16 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 93.98 149.86 0)
+		(at 178.816 46.736 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7fc8b1df-5543-480c-87cf-b33386780b6a")
-		(property "Reference" "#PWR0140"
-			(at 93.98 153.67 0)
+		(uuid "9da3b0c7-6f0d-4a8c-8005-f8a3a637760e")
+		(property "Reference" "#PWR015"
+			(at 178.816 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2932,7 +4791,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 93.98 146.2842 0)
+			(at 178.816 43.1602 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2940,7 +4799,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 149.86 0)
+			(at 178.816 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2949,7 +4808,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 149.86 0)
+			(at 178.816 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2958,7 +4817,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 149.86 0)
+			(at 178.816 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2967,29 +4826,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "72b5054e-c0ff-4072-bedf-a777c6e48437")
+			(uuid "c02acd45-e6c3-4510-bf8f-3b43d658e6ed")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0140")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 35.56 55.88 0)
+		(lib_id "New_Library:Dialight_587")
+		(at 175.26 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "82e5abe3-477b-400a-85cd-3affb01c52b2")
-		(property "Reference" "C2"
-			(at 38.481 55.0453 0)
+		(uuid "9e7ad023-b561-450a-a1ca-3c628a463dba")
+		(property "Reference" "D2"
+			(at 177.4541 128.1515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2997,8 +4856,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.470u"
-			(at 38.481 57.5822 0)
+		(property "Value" "~"
+			(at 177.4541 129.8329 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3006,8 +4865,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 36.5252 59.69 0)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 161.29 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3015,8 +4874,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 35.56 55.88 0)
+		(property "Datasheet" ""
+			(at 161.29 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3025,7 +4884,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 55.88 0)
+			(at 161.29 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3033,791 +4892,63 @@
 				(hide yes)
 			)
 		)
+		(pin "6"
+			(uuid "c6e5bdc7-8310-4f06-a9bc-9c63ff1dd7e2")
+		)
 		(pin "1"
-			(uuid "f811f2c9-2d18-484c-beab-1717ef4e4fe1")
+			(uuid "57f34c5d-838a-4c82-97f5-470ac25d9452")
 		)
 		(pin "2"
-			(uuid "04616e0e-ee12-4794-9cd6-b10c0891918f")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 157.226 61.468 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85edfde6-39b0-491e-a553-fe184a48e149")
-		(property "Reference" "#PWR0118"
-			(at 157.226 67.818 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 157.226 65.9114 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.226 61.468 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.226 61.468 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 157.226 61.468 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a737e6a0-e9d2-436c-b8fe-8aa3ca0ecad9")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0118")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 130.556 60.96 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "866c3b4c-6d17-4625-9b37-53356e36522a")
-		(property "Reference" "#PWR0110"
-			(at 130.556 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 130.556 65.4034 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.556 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.556 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.556 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "03a264ad-796b-4d38-a3c3-78a821823c73")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 73.914 132.842 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8685e165-1bbf-425a-a2bd-8010940fd257")
-		(property "Reference" "#PWR0145"
-			(at 73.914 139.192 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 73.914 137.2854 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.914 132.842 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.914 132.842 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 73.914 132.842 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1286fa42-88fe-42dd-86d3-04bd6efe4103")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0145")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 123.698 133.096 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "885a8fb8-e516-437d-9a39-2292906cd878")
-		(property "Reference" "#PWR0141"
-			(at 123.698 139.446 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 123.698 137.5394 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.698 133.096 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.698 133.096 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 123.698 133.096 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e555dcb-474f-4708-9011-e8f25c15c194")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0141")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 186.69 59.69 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b8e7591-0e99-4444-8795-5b2d6940254e")
-		(property "Reference" "#PWR0108"
-			(at 186.69 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 186.69 64.1334 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 186.69 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ff804d46-dd76-465a-b33c-b0d3dee4cd6d")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 140.208 149.098 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8cc131cf-9acf-48b8-b21f-af094108d0e1")
-		(property "Reference" "#PWR0150"
-			(at 140.208 152.908 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 140.208 145.5222 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.208 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.208 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 140.208 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9f029005-848d-4933-8b41-78908b986cdf")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0150")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 130.556 72.136 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d10538d-30e1-4850-86a7-276aa7bd53cb")
-		(property "Reference" "#PWR0126"
-			(at 130.556 75.946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 130.556 68.5602 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.556 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.556 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 130.556 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c9b13be1-b263-4bc1-a4dc-b787c6ecfed0")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 157.226 46.228 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "981a3a94-d0e1-4289-8a7e-91973668a0a9")
-		(property "Reference" "#PWR0123"
-			(at 157.226 50.038 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 157.226 42.6522 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.226 46.228 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.226 46.228 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 157.226 46.228 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "44a48820-7995-4eb7-96ea-66c0960c7a7b")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0123")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 35.56 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "98941c6a-3605-45d0-928b-bcab69aeffdb")
-		(property "Reference" "#PWR0103"
-			(at 35.56 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 35.56 48.4942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 35.56 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "962926ea-90c6-47d7-982c-17afeefe2fea")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 117.602 156.718 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9912fca6-6920-4cb8-8eb8-8b760f0da464")
-		(property "Reference" "F2"
-			(at 127.9079 153.2596 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812-E"
-			(at 129.794 162.814 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 118.872 164.338 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.142 166.243 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 117.602 156.718 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "614655e7-9a45-4a35-9077-c9897e1d2675")
-		)
-		(pin "2"
-			(uuid "fd1e1a96-53d3-4001-88a4-625bb0350f53")
-		)
-		(pin "3"
-			(uuid "04dc0ea0-8b52-4584-a498-595f2645070d")
+			(uuid "af708d98-c531-4568-aa94-46304023c2f9")
 		)
 		(pin "4"
-			(uuid "7264dd00-86bd-4214-81e5-e406cbfa8ecb")
+			(uuid "8b856cd5-8a61-4f11-814e-e499188fdf78")
+		)
+		(pin "5"
+			(uuid "2faf587d-5930-42b3-9ed7-e77b3fa17551")
+		)
+		(pin "3"
+			(uuid "9711773d-6b02-4726-8468-f415e99c33a4")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "F2")
+					(reference "D2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 100.584 133.35 0)
-		(mirror y)
+		(lib_id "New_Library:Dialight_587")
+		(at 59.69 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a113ccde-848b-4772-932e-3c0002518120")
-		(property "Reference" "#PWR0144"
-			(at 100.584 139.7 0)
+		(uuid "a12fe844-f1e3-4c71-bba0-3bd7f4867249")
+		(property "Reference" "A2"
+			(at 61.8841 128.1515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 100.584 137.7934 0)
+		(property "Value" "~"
+			(at 61.8841 129.8329 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 100.584 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.584 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 100.584 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ed07d37-eecc-4e08-820e-649283fe22f1")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0144")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 82.55 100.33 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a4b6cd6e-ef40-4d65-9a7a-e77eb08dc4d4")
-		(property "Reference" "#PWR0131"
-			(at 82.55 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 82.55 104.7734 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 100.33 0)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 45.72 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3826,7 +4957,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 100.33 0)
+			(at 45.72 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3835,7 +4966,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 82.55 100.33 0)
+			(at 45.72 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3843,13 +4974,28 @@
 				(hide yes)
 			)
 		)
+		(pin "6"
+			(uuid "452d3441-40b4-42b2-8a96-c2ba485da8a7")
+		)
 		(pin "1"
-			(uuid "a449c08a-8ad4-471a-92c4-9776d590c687")
+			(uuid "9832a729-b6ec-4094-bd6a-2b24ed9c68fe")
+		)
+		(pin "2"
+			(uuid "8cda8b99-8699-4ac6-a690-297288a4f6be")
+		)
+		(pin "4"
+			(uuid "929dd8b3-bfde-4951-a7d9-28090af9aa1b")
+		)
+		(pin "5"
+			(uuid "c3a9cf21-e37b-40fa-9cb0-84ae94804f60")
+		)
+		(pin "3"
+			(uuid "bd6af1b7-67a3-4b4b-8554-e2e1d3139ad4")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0131")
+					(reference "A2")
 					(unit 1)
 				)
 			)
@@ -3857,16 +5003,16 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 135.636 34.29 0)
+		(at 197.866 50.546 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ab7dad8f-bbdb-45c3-9eb7-72c073e2da84")
-		(property "Reference" "C3"
-			(at 138.557 33.4553 0)
+		(uuid "a97370ab-5b38-4e96-826c-b15e62cf718b")
+		(property "Reference" "C20"
+			(at 200.787 49.3338 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3875,7 +5021,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 138.557 35.9922 0)
+			(at 200.787 51.7581 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3884,7 +5030,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 136.6012 38.1 0)
+			(at 198.8312 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3893,7 +5039,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.636 34.29 0)
+			(at 197.866 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3902,7 +5048,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.636 34.29 0)
+			(at 197.866 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3911,15 +5057,216 @@
 			)
 		)
 		(pin "1"
-			(uuid "14617c86-049e-4f1c-895d-cbd4de60716a")
+			(uuid "44726ab7-058c-46ff-a8c0-dbb1f9d0082c")
 		)
 		(pin "2"
-			(uuid "705ca283-26fe-4848-baa1-72ee70dce0d4")
+			(uuid "452ea3bf-0070-4fb9-943b-226c926bcd02")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "C3")
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 102.87 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af0bdecb-e1ca-4cff-95db-472a2da5bdfb")
+		(property "Reference" "#PWR035"
+			(at 102.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 104.4631 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 102.87 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55c40e34-edb3-4563-bf7b-7b7e91d6be17")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 179.07 38.1 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0f3d3a8-b926-43ef-bd6b-cd08fc0528d4")
+		(property "Reference" "#PWR02"
+			(at 179.07 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 42.5434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfea79a5-ff85-4312-a55a-f019809d5f88")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 187.96 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b125ef3c-540d-4107-b99b-d5f22ade785e")
+		(property "Reference" "#PWR03"
+			(at 187.96 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 187.96 26.9042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e5616cd-7e54-4bc4-9696-d977a78e3694")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -3951,6 +5298,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -3993,18 +5341,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 117.602 164.338 0)
-		(mirror y)
+		(lib_id "power:VCC")
+		(at 218.44 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b2bd7151-0a11-4461-a40e-8b17a7aa80e3")
-		(property "Reference" "#PWR0142"
-			(at 117.602 170.688 0)
+		(uuid "b17b4c20-dc77-4975-a753-7c43de3f3b04")
+		(property "Reference" "#PWR09"
+			(at 218.44 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4012,8 +5359,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 117.602 168.7814 0)
+		(property "Value" "VCC"
+			(at 218.44 26.9042 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4021,7 +5368,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 117.602 164.338 0)
+			(at 218.44 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4030,7 +5377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 117.602 164.338 0)
+			(at 218.44 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4039,7 +5386,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 117.602 164.338 0)
+			(at 218.44 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4048,64 +5395,65 @@
 			)
 		)
 		(pin "1"
-			(uuid "bed54aac-4183-4884-984b-b1412b955db5")
+			(uuid "671b908c-359d-4ae3-a24e-06dff2a30d48")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0142")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 156.972 79.756 0)
+		(lib_id "New_Library:Dialight_587")
+		(at 140.97 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ba3d1e86-63b0-4447-8910-9af36eda1e07")
-		(property "Reference" "E1"
-			(at 167.2779 76.2976 0)
+		(fields_autoplaced yes)
+		(uuid "b555364c-2843-4c10-b117-3ba141acd33c")
+		(property "Reference" "C1"
+			(at 143.1641 84.9715 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "SK6812-E"
-			(at 169.164 85.852 0)
+		(property "Value" "~"
+			(at 143.1641 86.6529 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 158.242 87.376 0)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 127 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 159.512 89.281 0)
+			(at 127 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 156.972 79.756 0)
+			(at 127 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4113,371 +5461,45 @@
 				(hide yes)
 			)
 		)
+		(pin "6"
+			(uuid "73ff1d69-b6aa-499a-abd6-fe0b0a042544")
+		)
 		(pin "1"
-			(uuid "efdcae9b-d08e-45fd-ba81-d640ef6146b7")
+			(uuid "09e5a1a4-deb5-4603-b03b-cda0c3fbda45")
 		)
 		(pin "2"
-			(uuid "5bf2de50-e3fd-4bca-978e-6a09d64f6107")
-		)
-		(pin "3"
-			(uuid "10cadf0b-17e6-4b75-8dfc-26143eee95ec")
+			(uuid "8e378eef-2e05-4291-a688-268690db47c5")
 		)
 		(pin "4"
-			(uuid "c3513c7a-87ba-40c1-93e0-6907157561a4")
+			(uuid "2203b6e4-49cb-408d-ab09-91d0f14244c9")
+		)
+		(pin "5"
+			(uuid "1d6c2300-1e5c-4cae-b39a-96e94a1b16f6")
+		)
+		(pin "3"
+			(uuid "2435dfeb-761b-483b-9ded-9fc476349c27")
 		)
 		(instances
 			(project ""
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "E1")
+					(reference "C1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 67.564 164.338 0)
-		(mirror y)
+		(lib_id "New_Library:Dialight_587")
+		(at 104.14 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c1eb9c8b-f266-4a8d-9837-35a8c4ca2fc9")
-		(property "Reference" "#PWR0139"
-			(at 67.564 170.688 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 67.564 168.7814 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.564 164.338 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.564 164.338 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 67.564 164.338 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6f4835d9-f677-4677-99ee-311fc59df3ab")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0139")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 117.602 149.098 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c4228e24-1752-4f76-b0cc-7de075179ec7")
-		(property "Reference" "#PWR0143"
-			(at 117.602 152.908 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 117.602 145.5222 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 117.602 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 117.602 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 117.602 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8fb43dae-9fa7-4a59-a4f0-070c8ede2ecf")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0143")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 123.698 117.856 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c54014ec-77a8-45de-9cfa-546602e9e967")
-		(property "Reference" "#PWR0134"
-			(at 123.698 121.666 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 123.698 114.2802 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.698 117.856 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.698 117.856 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 123.698 117.856 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ba8a0cae-e737-4ad6-ba41-366ff650cfc0")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0134")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 156.972 72.136 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd36ca67-2528-4d25-bbe8-2013c851c653")
-		(property "Reference" "#PWR0107"
-			(at 156.972 75.946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 156.972 68.5602 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.972 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.972 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 156.972 72.136 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1dbb1db8-7256-41e2-a818-68023cbdfae7")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 105.41 188.976 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3264398-4dc4-403b-ac7d-8bb401a59e89")
-		(property "Reference" "#PWR0151"
-			(at 105.41 195.326 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 105.41 193.4194 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 188.976 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 188.976 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 105.41 188.976 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ac1fda56-9265-4acf-ba4f-1e4148e62511")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0151")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 105.41 185.166 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d339cba6-bf07-4493-b7ab-92cddd9628ab")
-		(property "Reference" "C9"
-			(at 108.331 184.3313 0)
+		(uuid "be03460e-76c0-4f68-bce4-e3bdf270ef85")
+		(property "Reference" "B2"
+			(at 106.3341 128.1515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4485,8 +5507,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
-			(at 108.331 186.8682 0)
+		(property "Value" "~"
+			(at 106.3341 129.8329 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4494,8 +5516,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 106.3752 188.976 0)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 90.17 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4503,8 +5525,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 105.41 185.166 0)
+		(property "Datasheet" ""
+			(at 90.17 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4513,7 +5535,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 105.41 185.166 0)
+			(at 90.17 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4521,34 +5543,46 @@
 				(hide yes)
 			)
 		)
+		(pin "6"
+			(uuid "310445a1-5b48-4512-89b9-5db1dd1d9999")
+		)
 		(pin "1"
-			(uuid "f6a6adcf-0bfc-4591-b7d6-4a3768da87b0")
+			(uuid "aefd943f-700e-4407-983a-9ebace6104fa")
 		)
 		(pin "2"
-			(uuid "82e84658-a904-4618-bf36-a751eecc1401")
+			(uuid "7f75a4c9-aae6-4069-8078-27f06d4a05ca")
+		)
+		(pin "4"
+			(uuid "771989f3-9b02-41a5-b3b3-006a71137df3")
+		)
+		(pin "5"
+			(uuid "1f30a450-6812-4b5e-b622-377226b0dc38")
+		)
+		(pin "3"
+			(uuid "26ac1066-27f0-4b77-9a4a-f4d6f08830f4")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "C9")
+					(reference "B2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 135.636 38.1 0)
-		(mirror y)
+		(at 140.97 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ddee034c-8df5-4ac9-92cd-4516ea30c9d8")
-		(property "Reference" "#PWR0125"
-			(at 135.636 44.45 0)
+		(uuid "c275e728-9f40-47f9-a4e2-d2b2224b045c")
+		(property "Reference" "#PWR036"
+			(at 140.97 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4557,7 +5591,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 135.636 42.5434 0)
+			(at 140.97 104.4631 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4565,7 +5599,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.636 38.1 0)
+			(at 140.97 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4574,7 +5608,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.636 38.1 0)
+			(at 140.97 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4582,8 +5616,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 135.636 38.1 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 140.97 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4592,263 +5626,65 @@
 			)
 		)
 		(pin "1"
-			(uuid "a7c818d5-46c4-489a-aa0f-952246b6f2e8")
+			(uuid "4c43ab97-304e-484b-982a-55834eab893c")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0125")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 156.972 87.376 0)
-		(mirror y)
+		(lib_id "New_Library:Dialight_587")
+		(at 173.99 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e2d431f6-8ce8-41f2-8e74-8bcdd5ab5a27")
-		(property "Reference" "#PWR0113"
-			(at 156.972 93.726 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 156.972 91.8194 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.972 87.376 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.972 87.376 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 156.972 87.376 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8b540024-bb46-431d-8fdd-43576febbb7a")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0113")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 135.636 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e530ae27-1a57-4532-bfeb-b41e6ea24376")
-		(property "Reference" "#PWR0124"
-			(at 135.636 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 135.636 26.9042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.636 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.636 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.636 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83bdc2ee-98b4-4f5b-8bfa-808803025d8c")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0124")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 67.564 149.098 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e6067a2a-b03c-4f65-a2a4-b627b6acdc1d")
-		(property "Reference" "#PWR0138"
-			(at 67.564 152.908 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 67.564 145.5222 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.564 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.564 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 67.564 149.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ef057d68-6335-4c18-81a7-78ab2bb1dfc2")
-		)
-		(instances
-			(project ""
-				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0138")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 130.556 79.756 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ee5279bc-9ed2-4dc6-ae1e-a912f4bae78b")
+		(uuid "c2bc9587-eac8-4aaf-a883-f30a85e29eb3")
 		(property "Reference" "D1"
-			(at 140.8619 76.2976 0)
+			(at 176.1841 84.9715 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "SK6812-E"
-			(at 142.748 85.852 0)
+		(property "Value" "~"
+			(at 176.1841 86.6529 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Library:4960_Test4"
-			(at 131.826 87.376 0)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 160.02 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.096 89.281 0)
+			(at 160.02 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 130.556 79.756 0)
+			(at 160.02 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4856,20 +5692,26 @@
 				(hide yes)
 			)
 		)
+		(pin "6"
+			(uuid "7442b842-9009-42c4-bd13-afbb9c4cf0e5")
+		)
 		(pin "1"
-			(uuid "8e9c9d90-c7e3-4123-9fd4-6f85b03700aa")
+			(uuid "f79858c4-e00b-416b-9d02-def7f34e9cca")
 		)
 		(pin "2"
-			(uuid "8c70f8d4-1cbf-4404-a7a5-4f7b3ed96ea7")
-		)
-		(pin "3"
-			(uuid "bbd8903a-8434-47fc-ac5f-c4adb3084b64")
+			(uuid "46c25e86-0b5b-4b8f-9e04-337cec2a9acb")
 		)
 		(pin "4"
-			(uuid "dbc3d221-77cb-477c-b658-eea7c90a69a5")
+			(uuid "502e90fa-3003-486b-baa1-dfb7e0a39834")
+		)
+		(pin "5"
+			(uuid "087bd9de-92ee-4de7-b2f3-b9ce19f089e2")
+		)
+		(pin "3"
+			(uuid "78bdd785-2b8b-4b2c-a0b6-96f7425f76b9")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
 					(reference "D1")
 					(unit 1)
@@ -4878,18 +5720,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 203.2 87.376 0)
-		(mirror y)
+		(lib_id "Device:C")
+		(at 218.186 50.546 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f1b66687-1e45-4c3b-aebb-aa39a02be75b")
-		(property "Reference" "#PWR0115"
-			(at 203.2 93.726 0)
+		(uuid "c3381ac4-1451-4b7d-9923-e17922f69c38")
+		(property "Reference" "C22"
+			(at 221.107 49.3338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 221.107 51.7581 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 219.1512 54.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4897,25 +5756,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 203.2 91.8194 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 87.376 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 87.376 0)
+		(property "Datasheet" "~"
+			(at 218.186 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4924,7 +5766,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 203.2 87.376 0)
+			(at 218.186 50.546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4933,12 +5775,1500 @@
 			)
 		)
 		(pin "1"
-			(uuid "3c14362b-0aeb-4f69-970e-a8968112c33f")
+			(uuid "690a4edb-e76f-44b9-abad-175e7c48b765")
+		)
+		(pin "2"
+			(uuid "24df1c80-66eb-459b-b09c-89d370a36ce4")
 		)
 		(instances
-			(project ""
+			(project "RGB7Segment"
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
-					(reference "#PWR0115")
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 38.1 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb3578cb-5cbb-4f92-b01b-f5450a28f6fb")
+		(property "Reference" "#PWR010"
+			(at 218.44 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 42.5434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d157bc7-3c6e-4aed-ac38-65106bf390ab")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 208.28 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbd11770-3702-4b81-9cde-3614d4a099fb")
+		(property "Reference" "#PWR031"
+			(at 208.28 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 147.6431 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 208.28 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1aebe1b-0238-49ab-8301-0509603ede34")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 197.866 54.356 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc4ba5f5-89ff-4cee-a0d5-738385c11ab8")
+		(property "Reference" "#PWR020"
+			(at 197.866 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 197.866 58.7994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 197.866 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 197.866 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 197.866 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "adee5f5a-539e-4832-9454-fe634d82be92")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 208.28 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce3fd0f6-f371-409b-8c26-c7d96ce389d3")
+		(property "Reference" "#PWR052"
+			(at 208.28 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 209.677 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 208.28 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3ebc902-7154-4be9-8fe1-80baf7e1ea9e")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 227.076 50.546 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cfa54d64-aecd-4390-9412-878d7b436c81")
+		(property "Reference" "C23"
+			(at 229.997 49.3338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 229.997 51.7581 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 228.0412 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.076 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 227.076 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38e5a74a-4dd7-416c-8e52-acd280fe9903")
+		)
+		(pin "2"
+			(uuid "75737720-d56b-4146-be87-6031aa93dc13")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 178.816 54.356 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cfce3b81-4f47-4a66-9226-24415f16b662")
+		(property "Reference" "#PWR016"
+			(at 178.816 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 178.816 58.7994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 178.816 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 178.816 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 178.816 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29639c82-8793-47d2-8050-bf09c71de67b")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 168.91 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d033d913-1d4a-4ee2-9c8b-00872a8c56c5")
+		(property "Reference" "C17"
+			(at 171.831 49.5878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 171.831 52.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 169.8752 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a1c5dd6-8bb1-4398-90f8-b0ba31aaece1")
+		)
+		(pin "2"
+			(uuid "655bb378-d281-42f6-9f1d-dc14bccb1757")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library:Dialight_587")
+		(at 269.24 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d076ddd3-2e09-4f14-afb5-ed67a640d261")
+		(property "Reference" "G2"
+			(at 271.4341 128.1515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 271.4341 129.8329 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 255.27 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 255.27 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "3789dc2e-4215-4d10-a0e3-06ab5673a5fe")
+		)
+		(pin "1"
+			(uuid "f2d93a50-6158-492f-a8ea-df088df4be54")
+		)
+		(pin "2"
+			(uuid "51312a9f-87a1-4e9a-ab0d-31fc2e2d4b1d")
+		)
+		(pin "4"
+			(uuid "69f45091-2702-4d9f-848c-f8a7fcc6ef78")
+		)
+		(pin "5"
+			(uuid "06084bba-f2d0-4fd3-a5a1-0f0f1fd645dd")
+		)
+		(pin "3"
+			(uuid "f4c617fa-9325-4289-80fa-88198d1aa8fc")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "G2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 104.14 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d14c65fe-50a7-4500-9d4b-8f7a68a7ccb0")
+		(property "Reference" "#PWR049"
+			(at 104.14 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 105.537 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d6f9c62-9e0e-45e7-a161-2ea8b4b4285d")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 59.69 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5dcca38-feec-4ba2-b5b7-9a7823dee783")
+		(property "Reference" "#PWR048"
+			(at 59.69 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 61.087 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c530140-218c-45b8-b954-f9930701c2b7")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 208.28 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df6b1e8e-7605-4dbb-abb8-42890cfcad3a")
+		(property "Reference" "C14"
+			(at 211.201 33.0778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 211.201 35.5021 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 209.2452 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 208.28 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e36601af-c6ad-47da-8ad1-dd320214521d")
+		)
+		(pin "2"
+			(uuid "14516bb8-a763-4b95-bf51-f58c6d1886d4")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 208.28 38.1 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e22d23a2-4670-4b09-82b0-374df9710ada")
+		(property "Reference" "#PWR08"
+			(at 208.28 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 42.5434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 208.28 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "600eef41-14d1-4d9a-9db8-77faa8211ae4")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 179.07 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e69c523e-48f0-4eb0-9737-76d6aa9d8568")
+		(property "Reference" "#PWR01"
+			(at 179.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 179.07 26.9042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "261624e2-4c2f-4313-84d4-54d65721a086")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 227.33 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8b6a462-2169-4886-b3ab-92e770abeffc")
+		(property "Reference" "#PWR011"
+			(at 227.33 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 227.33 26.9042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed405f7b-e694-405f-9857-5b9847889dfe")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 179.07 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea382987-455d-48bc-bb16-e2fa2372eac0")
+		(property "Reference" "C11"
+			(at 181.991 33.0778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 181.991 35.5021 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 180.0352 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "876f7b87-125f-4216-94ab-57e5eefba163")
+		)
+		(pin "2"
+			(uuid "748dfafd-29e2-4793-8b20-6f665f1db281")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library:Dialight_587")
+		(at 237.49 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eca33198-d7cc-4487-bcf3-01d8187cc1dc")
+		(property "Reference" "F2"
+			(at 239.6841 128.1515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 239.6841 129.8329 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 223.52 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 223.52 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "45c6af35-5791-4129-80d4-6c445e851453")
+		)
+		(pin "1"
+			(uuid "ea338a7f-ffd8-4439-9d62-9d9d9057ae17")
+		)
+		(pin "2"
+			(uuid "cf0bfca2-83fa-46b9-9126-fdb619a478f2")
+		)
+		(pin "4"
+			(uuid "9153ce12-c48a-41ea-b1e8-67449a2636a9")
+		)
+		(pin "5"
+			(uuid "d89f9fe1-56bd-4e60-b35b-903c1844730c")
+		)
+		(pin "3"
+			(uuid "115794a7-f1b5-4462-8e52-e646c7c133c1")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 187.706 50.546 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef46d27a-daaa-47bf-9a58-2729b969ebca")
+		(property "Reference" "C19"
+			(at 190.627 49.3338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 190.627 51.7581 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 188.6712 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.706 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.706 50.546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f390ddcd-5aab-402a-a427-a5969dcd3201")
+		)
+		(pin "2"
+			(uuid "be5d6f28-d302-497a-8161-e3bb4d8eb607")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 227.076 54.356 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef5e4da9-41ce-4f50-81eb-8d1675d6aaff")
+		(property "Reference" "#PWR026"
+			(at 227.076 60.706 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 227.076 58.7994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.076 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.076 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 227.076 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a4f882c-e684-45f0-a0eb-5a70f9ea09ae")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library:Dialight_587")
+		(at 236.22 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f145b185-e318-451e-b02a-5dd666effdd1")
+		(property "Reference" "F1"
+			(at 238.4141 84.9715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 238.4141 86.6529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 222.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 222.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "e690e77b-d2a5-47e2-8388-085466e66a46")
+		)
+		(pin "1"
+			(uuid "9d5adcf5-d030-4bb3-b31b-d7f0f07a204b")
+		)
+		(pin "2"
+			(uuid "7e025d91-00e9-4937-b09b-74c8493752a8")
+		)
+		(pin "4"
+			(uuid "e8532585-b17f-4937-a1cd-5e2e0205ae49")
+		)
+		(pin "5"
+			(uuid "c62beb35-081a-4a83-b461-d41101d9ea61")
+		)
+		(pin "3"
+			(uuid "d40fc298-9c0c-4765-b97d-3d1d039ec6b0")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library:Dialight_587")
+		(at 102.87 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3e5fc5b-d460-42c1-963f-855d721a7b87")
+		(property "Reference" "B1"
+			(at 105.0641 84.9715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 105.0641 86.6529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 88.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "baf237ed-66b3-44a0-90d8-1b6dc508e913")
+		)
+		(pin "1"
+			(uuid "428f6a20-eb68-4b2f-abdf-78f434db886d")
+		)
+		(pin "2"
+			(uuid "dc1c0c31-45de-42f0-916f-f4bdbe20e8e6")
+		)
+		(pin "4"
+			(uuid "77cfff9e-873c-47b4-ac28-b4b857411867")
+		)
+		(pin "5"
+			(uuid "33d7ea3c-ae62-47b9-ba26-bfce4be8758d")
+		)
+		(pin "3"
+			(uuid "b610c739-4660-4131-8da5-0989ae34e0a2")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "B1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 236.22 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4716dbf-8ec6-48fe-9561-e6ba79bbf38f")
+		(property "Reference" "#PWR039"
+			(at 236.22 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 104.4631 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55755328-72d6-4430-8086-c4abd2550af8")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -5006,6 +7336,292 @@
 			(project ""
 				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
 					(reference "#PWR0127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 175.26 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5c7315f-3874-4241-9a95-6b52d7921de0")
+		(property "Reference" "#PWR051"
+			(at 175.26 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 176.657 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a45be85-e5eb-4d69-859f-22fd9091ff48")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 218.44 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8c27ff4-b685-49b4-9d41-9b75bb905bec")
+		(property "Reference" "C15"
+			(at 221.361 33.0778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 221.361 35.5021 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 219.4052 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c676b987-5bcc-4e67-8d8c-eb27864ac0e7")
+		)
+		(pin "2"
+			(uuid "df6a0b6d-48d0-4087-8ca4-48e663c48165")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library:Dialight_587")
+		(at 267.97 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa7cc3ce-6e33-4c71-a2f5-d1144620a185")
+		(property "Reference" "G1"
+			(at 270.1641 84.9715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 270.1641 86.6529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:587-2086-247F"
+			(at 254 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 254 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "bbe5615a-e245-46ab-9ae9-cec1814a1576")
+		)
+		(pin "1"
+			(uuid "a97c69ff-f210-4248-aa29-57978764cda7")
+		)
+		(pin "2"
+			(uuid "71c4da14-f34b-4bf7-96e2-5daba3b53680")
+		)
+		(pin "4"
+			(uuid "45d850ea-5657-470d-b883-56df56e7efb7")
+		)
+		(pin "5"
+			(uuid "debf615f-11a0-46bf-8a59-42f21d34d013")
+		)
+		(pin "3"
+			(uuid "0fc351d0-17d3-406a-860b-fb7983a90416")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "G1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 175.26 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fde43e8f-e2c4-4eaa-90d3-14591f6adea2")
+		(property "Reference" "#PWR030"
+			(at 175.26 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 147.6431 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0494262-3727-4411-b18e-1223a8b24fb8")
+		)
+		(instances
+			(project "RGB7Segment"
+				(path "/2de6dca9-f910-47a3-9fba-0aaf6ef710f6"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
