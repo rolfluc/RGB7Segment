@@ -147,7 +147,7 @@
 		(uuid "034f5cb2-47f6-4273-9974-f7da43f39400")
 		(at 225.365356 105.485356)
 		(property "Reference" "G1"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.914644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "96f01625-dfe1-483c-b6b5-7517ba028143")
@@ -317,7 +317,7 @@
 		(uuid "1deed671-d28b-4801-8e75-3f2ffedc4f31")
 		(at 267.965356 109.6)
 		(property "Reference" "A2"
-			(at 2.25 -1.25 0)
+			(at 1.434644 1 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "eb6e6bbd-fcde-462f-b62c-f44080a6d00f")
@@ -485,9 +485,9 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "1feb7577-6ea4-4d48-831c-711d73654a05")
-		(at 229.965356 104)
+		(at 230.165356 104)
 		(property "Reference" "B1"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.8 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "85d80f9e-e417-4d42-88c7-55f15ad64c6e")
@@ -657,7 +657,7 @@
 		(uuid "2e15b332-da11-4da3-9b31-80afc36a5a7a")
 		(at 272.765356 117.285356)
 		(property "Reference" "C2"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.914644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "cd65751d-3c27-48af-8acb-5b103d51f0fe")
@@ -827,7 +827,7 @@
 		(uuid "2fc18152-c75d-4627-b70e-7792f08fb94a")
 		(at 272.7 113.6)
 		(property "Reference" "B2"
-			(at 2.25 -1.25 0)
+			(at 1.5 1 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "e518fa8f-6ecf-47da-aa14-42515e1983a1")
@@ -997,7 +997,7 @@
 		(uuid "33fd9851-4b4a-4480-801d-8d5cbef3e10c")
 		(at 263.565356 117.285356)
 		(property "Reference" "E2"
-			(at 2.25 -1.25 0)
+			(at 1.434644 0.914644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "eecb3839-a9eb-4bec-a5f5-028406d9d074")
@@ -1167,7 +1167,7 @@
 		(uuid "6ac0b394-9740-4e91-b725-3c23826de974")
 		(at 268.165356 115.485356)
 		(property "Reference" "G2"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.914644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "9a08f4ff-c145-4887-9945-d2bd8b71663b")
@@ -1335,9 +1335,9 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "81abf7ee-c5f9-4fe7-99c8-838c4c84dd64")
-		(at 229.965356 107.485356)
+		(at 230.165356 107.485356)
 		(property "Reference" "C1"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.714644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "df103660-477a-4a95-a6d9-cdca1ade739e")
@@ -1505,9 +1505,9 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "a8871774-a4ad-475b-bb28-f4e757276e1a")
-		(at 225.6 100)
+		(at 225.365356 101.085356)
 		(property "Reference" "A1"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.914644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "4e822d5d-6095-41f7-b5e6-dfa021d41073")
@@ -1675,9 +1675,9 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "aeef9fcf-ca4c-4769-b39b-26864ac93fa5")
-		(at 220.165356 107.485356)
+		(at 220.565356 107.485356)
 		(property "Reference" "E1"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.714644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "1d357a06-26d4-46e1-ace6-a4847fccca00")
@@ -1845,9 +1845,9 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "b60445b6-9dd7-46a5-92d7-0411636ae9ca")
-		(at 220.165356 103.885356)
+		(at 220.565356 103.885356)
 		(property "Reference" "F1"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.914644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "e1638426-9741-47bd-b4c5-1ea460f2c4e2")
@@ -2015,9 +2015,9 @@
 	(footprint "Library:587-2086-247F"
 		(layer "F.Cu")
 		(uuid "c4208664-77e4-40c8-8c35-4c0a6d60eb39")
-		(at 225.965356 111.085356)
+		(at 225.365356 110.285356)
 		(property "Reference" "D1"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.914644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "f7ab0319-0edd-4c75-89ec-b6ba5977a443")
@@ -2187,7 +2187,7 @@
 		(uuid "cc28be1a-8916-4386-897f-374d4ea53f8b")
 		(at 263.365356 113.685356)
 		(property "Reference" "F2"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.914644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "af4ae0bc-3b8c-433e-945a-126e7577d6ff")
@@ -2357,7 +2357,7 @@
 		(uuid "d564f6db-5f5e-4c91-b5a5-defc5a25cd85")
 		(at 268.365356 120.685356)
 		(property "Reference" "D2"
-			(at 2.25 -1.25 0)
+			(at 1.634644 0.914644 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "b036844c-0169-4e8d-a240-a19ec31c3e9c")
