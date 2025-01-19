@@ -70,11 +70,9 @@ int main(void)
 	Color c2 = { 0x00, 0x00, 0x0f };
 	Color c3 = { 0x00, 0x00, 0x00 };
 	
-	uint8_t Sample[12] = { 0xEE, 0x88, 0xEE, 0x88, 0xEE, 0x88, 0xEE, 0x88, 0xEE, 0x88, 0xEE, 0x88 };
 	for (;;)
 	{
-		//SetDisplay(v0, c0, v1, c1);
-		SendDisplay((uint8_t*)&Sample, 4);
+		SetDisplay(v0, c0, v1, c1);
 		HAL_Delay(1000);
 		//SetDisplay(v0, c2, v1, c1);
 		//HAL_Delay(1000);

@@ -27,4 +27,4 @@ typedef struct
 }PaddedColor;
 
 // Places the respective color at the prescribed location. Assumes the buffer has been allocated.
-void FillColor(PaddedColor* buffer, Color color);
+void FillColor(PaddedColor* buffer, Color color, uint8_t dimValue);
