@@ -5,9 +5,6 @@
 #include <memory.h>
 // Total Data size, 2 x 7 segments, 3 colors per segment, 4 bits of data per bit of color
 // 24 bits of color, 24 * 4 (bits of SPI data) / 8 = 12 bytes
-#define NUMBER_SEGMENTS 7 * 2
-#define BYTES_PER_SEGMENT 12
-
 // 7 Segment Data ordering is:
 // F1->G1->A1->B1->F2->A2->G2->B2->C2->D2->E2->C1->D1->E1->
 
@@ -32,7 +29,7 @@ typedef struct
 
 typedef struct 
 {
-	uint32_t StartOfFrame;
+	uint32_t StartOfFrame; 
 	Segments seg;
 	uint32_t EndOfFrame;
 }Display;
@@ -41,7 +38,7 @@ Display displayBuffer;
 
 static inline void ColorToBuffer(Color c, PaddedColor* pc)
 {
-	const uint8_t dimValue = 0x1F;
+	const uint8_t dimValue = 0x03;
 	FillColor(pc, c, dimValue);
 }
 

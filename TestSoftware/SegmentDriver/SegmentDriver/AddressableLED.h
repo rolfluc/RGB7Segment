@@ -9,8 +9,12 @@
 
 typedef union
 {
-	uint8_t flags : 3;
-	uint8_t Dimming : 5;
+	struct
+	{
+		uint8_t Dimming : 5;	
+		uint8_t flags : 3;
+	};
+	uint8_t raw;
 }Command;
 
 typedef struct 

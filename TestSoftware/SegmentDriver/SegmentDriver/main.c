@@ -33,7 +33,7 @@ void SystemClock_Config(void)
 	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
 	RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
 	RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
-	RCC_OscInitStruct.PLL.PLLN = 13;
+	RCC_OscInitStruct.PLL.PLLN = 8;
 	RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
 	RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
 	RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
@@ -51,7 +51,7 @@ void SystemClock_Config(void)
 	RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 	RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_3) != HAL_OK)
+	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
 	{
 		__ASM("BKPT 255");
 	}
@@ -65,18 +65,21 @@ int main(void)
 	InitSPI();//InitTimer();
 	SegmentVal v0 = GetSegmentForInt(8);
 	SegmentVal v1 = GetSegmentForInt(8);
-	Color c0 = { 0x00, 0x00, 0x00 };
-	Color c1 = { 0x00, 0x00, 0x00 };
-	Color c2 = { 0x00, 0x00, 0x0f };
-	Color c3 = { 0x00, 0x00, 0x00 };
+	Color c0 = { 0x01, 0x01, 0x01 };
+	Color c1 = { 0x02, 0x00, 0x02 };
+	Color c2 = { 0x00, 0x00, 0x02 };
+	Color c3 = { 0x00, 0x02, 0x00 };
 	
 	for (;;)
 	{
-		SetDisplay(v0, c0, v1, c1);
-		HAL_Delay(1000);
-		//SetDisplay(v0, c2, v1, c1);
-		//HAL_Delay(1000);
-		//SetDisplay(v0, c3, v1, c1);
-		//HAL_Delay(1000);
+		for (uint8_t i = 0; i < 9; i++)
+		{
+			SetDisplay(GetSegmentForInt(i), c0, GetSegmentForInt(i + 1), c1);
+			HAL_Delay(1000);
+			SetDisplay(GetSegmentForInt(i), c1, GetSegmentForInt(i + 1), c2);
+			HAL_Delay(1000);
+			SetDisplay(GetSegmentForInt(i), c2, GetSegmentForInt(i + 1), c3);
+			HAL_Delay(1000);	
+		}
 	}
 }
